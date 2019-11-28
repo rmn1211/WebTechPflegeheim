@@ -1,0 +1,137 @@
+.main
+{
+	background-color: rgb(255, 255, 255);
+	   
+	color: #000000;
+	font-family: Helvetica;
+	
+}
+.mainmenu
+{
+	
+	text-align: center;
+	background-color: #fff066;
+	font-size:large;
+	cursor: pointer;
+	width: 100%;
+	
+}
+.navigator
+{
+	width: 20%;
+	height: 10%;
+	background-color: #fff066;
+	float: left;
+	padding: 20px;
+	
+	
+	
+	
+}
+/*.dropdownonmouse
+{
+	width: 20%;
+	height: 10%;
+	
+	float: left;
+	padding: 20px;
+	
+	
+}*/
+
+.dropdownelem
+{
+	padding: 20px;
+	display: none;
+	background-color: #222222;
+	border-top: 1px solid #000000;
+	z-index:1;
+	
+}
+.dropdown:hover .dropdownelem
+{
+	display:block;
+}
+.dropdown:hover
+{
+	background-color: #222222;
+}
+
+.navigator:hover
+{
+	background-color: #fff046;
+}
+
+ul
+{
+	list-style-type: circle;
+	float: right;
+	padding: 10px;
+}
+li
+{
+	
+	font-size: large;
+	margin: 5px;
+}
+.angebot
+{
+	text-align: center;
+}
+.text
+{
+	text-align: left;
+	position: absolute;
+	top: 40%;
+	z-index:0;
+}
+footer
+{
+position: fixed;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.impressum
+{
+	color: white;
+}
+.kontakt
+{
+	color: white;
+	text-align: right;
+	
+}
+.footbar
+{
+	
+}
+@media screen and (max-width: 840px)
+{
+	body
+	{
+		overflow-y: scroll;
+		
+	}
+	.mainmenu
+	{
+		width:100%;
+		height: 200px;
+		z-index: 1;
+	}
+	.dropdown
+	{
+		z-index: 1;
+		width: 100%;
+	}
+	.dropdownelem
+	{
+		width: 50%;
+		z-index: 2;
+	}
+	.text
+	{
+		position:relative;
+	}
+}
