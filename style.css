@@ -1,155 +1,77 @@
-.main
-{
-	background-color: rgb(255, 255, 255);
-	   
-	color: #000000;
-	font-family: Helvetica;
-	
+body, html {
+    height: 100%;
 }
-.mainmenu
-{
-	
-	text-align: center;
-	background-color: #fff066;
-	font-size:large;
-	cursor: pointer;
-	width: 100%;
-	
+.main{
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
 }
-.navigator
-{
-	width: 20%;
+.background{
+    min-width: 90%;
+    float: both;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.navbar{
+    width: 100%;
+    background-color: #fff066 ;
+    text-align: center;
+    
+
+}
+.navelem, .dropdown{
+    width: 18%;
 	height: 10%;
-	background-color: #fff066;
-	float: left;
-	padding: 20px;
-	
-	
-	
-	
+    float: left;
+    font-size: large;
+    cursor: pointer;
+    background-color: #fff066;
+    padding-right: 2%;
+    padding-bottom: 10px;
+    text-align: center;
+    
 }
-
-.tab1
-{
-	text-align: left;
-	font-size: large;
-}
-/*.dropdownonmouse
-{
-	width: 20%;
-	height: 10%;
-	
-	float: left;
-	padding: 20px;
-	
-	
-}*/
-
-.dropdownelem
-{
-	padding: 20px;
-	display: none;
-	background-color: #222222;
-	border-top: 1px solid #000000;
-	z-index:1;
-	
-}
-.dropdown:hover .dropdownelem
-{
-	display:block;
-}
-.dropdown:hover
-{
-	background-color: #222222;
-}
-
-.navigator:hover
-{
-	background-color: #fff046;
-}
-
-ul
-{
-	list-style-type: circle;
-	float: right;
-	padding: 10px;
-}
-li
-{
-	
-	font-size: large;
-	margin: 5px;
-}
-.angebot
-{
-	text-align: center;
-}
-.text
-{
-	text-align: left;
+.content{
+    text-align: left;
 	position: absolute;
-	top: 40%;
-	z-index:0;
+    top: 60%;
+    width: 100%;
 }
-footer
-{
-position: fixed;
-  padding: 10px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.impressum
-{
-	color: white;
-}
-.kontakt
-{
-	color: white;
-	text-align: right;
-	
-}
-.footbar
-{
-	
-}
-@media screen and (max-width: 840px)
-{
-	body
-	{
-		overflow-y: scroll;
-		
-	}
-	.mainmenu
-	{
-		width:100%;
-		height: 200px;
-		z-index: 1;
-	}
-	.dropdown
-	{
-		z-index: 1;
-		width: 100%;
-	}
-	.dropdownelem
-	{
-		width: 50%;
-		z-index: 2;
-	}
-	.text
-	{
-		position:relative;
-	}
-}
-
-.adresse {
-	
+.dropdownelem{
+    display: none;
+    padding-right: 2%;
+    padding-bottom: 10px;
+	display: none;
+	background-color: #fff066;
+    border-top: 1px solid #000000;
+	z-index:2;
 
 }
+.slideshow{
+    background-color: rgb(206, 206, 206) ;
+    max-width: 70%;
+    min-width: 60%;
 
-.
-
-.tel {
+}
+.bild{
+    
+    max-width: 50%;
+    max-height: auto;
+}
+.text{
+    font-size: 18pt;
+    text-align: left;
+    position: absolute;
+    top: 0%;
+    left: 35%;
+}
+.navelem:hover,.dropdownelem:hover{
+    background-color: #eed600;
+    text-decoration: underline;
+    color: gray;
+}
+.dropdown:hover .dropdownelem{
+    display:block;
 
 }
 
