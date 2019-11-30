@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/icon" href="*.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mainmenu.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <script src="slideshow.js"></script>
+    <title>KaWei Pflegedienst</title>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</head>
+
+<body class="main" onload="showSlides(1);">
+    <div class="mainmenu-container">
+        <div class="menu-item" aria-current="page">
+            Dienstleistungen
+        </div>
+        <div class="menu-item">
+            Allgemeine Informationen
+        </div>
+        <div class="menu-item">
+            Rechner
+        </div>
+        <div class="menu-item">
+            Kontakt
+        </div>
+        <div class="menu-item">
+            Jobangebote
+        </div>
+    </div>
+
+    <h1 align="center">Dienstleistungen</h1>
+
+    <table>
+        <tr>
+            <td class="content">
+                <p>Öffnungszeiten Mo. und Do. von 15.00 Uhr bis 18.00 Uhr und nach Absprache.</p>
+                <p> </p>
+                <p>Unser Betreuungsangebot richtet sich an pflegebedürftige Menschen mit oder ohne Behinderungen, also
+                    Menschen, die wegen der Berufstätigkeit ihrer Angehörigen
+                    tagsüber bzw. stundenweise nicht ohne Betreuung bleiben können.</p>
+                <p> </p>
+                <p>Sie können in unserem Seniorengarten in geselliger Runde Kontakte knüpfen, gemeinsam kochen oder
+                    backen, am kulturellen und sozialen Leben in der Gemeinschaft
+                    teilhaben.</p>
+                <p> </p>
+                <p>Bei schönem Wetter lädt unser Garten zum Aufenthalt im Freien ein.</p>
+                <p>Wenn erwünscht bzw.erforderlich, geben wir auch Hilfestellung bei der Nahrungsaufnahme, der
+                    Medikamenteneinnahme und bei Toilettengängen.</p>
+                <p> </p>
+                <p>Eine behindertengerechte sanitäre Einrichtung steht zur Verfügung.</p>
+                <p> </p>
+                <p>Die Betreuung kann tages-oder stundenweise in Anspruch genommen werden, wobei das
+                    Beschäftigungsangebot immer flexibel und patientengerecht abgestimmt
+                    ist.</p>
+                <p> </p>
+                <p>Die Betreuungsleistungen können mit der Pflegekasse abgerechnet werden. Auch können diese Leistungen
+                    als Verhinderungspflege in Anspruch genommen werden.</p>
+
+            </td>
+            <td class="right-menu">
+                <div class="right-menu-item"><a href="#">Konkrete Pflegeanfrage</a></div>
+                <div class="right-menu-item"><a href="#">Beratungsgespräch</a></div>
+            </td>
+        </tr>
+
+    </table>
+
+    <p align="center">
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/slideshow1.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/slideshow2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/slideshow3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/slideshow4.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/slideshow5.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/slideshow6.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="footer-container">
+
+        <div class="footer-item">
+            <div class="footer-link"><a href="impressum.html" class="footbar">Impressum
+                </a></div>
+
+        </div>
+        <div class="footer-item">
+            <div class="footer-link"><a href="datenschutz.html" class="footbar">
+                    Datenschutzerkl&auml;rung
+                </a></div>
+
+        </div>
+
+        <div class="footer-item">
+            <div class="footer-contact">
+                Kontakt: <br>Karin Weirich<br>
+                St. Avolder Str. 72<br>
+                66740 Saarlouis<br>
+                Tel.: +496831 - 5052200<br>
+                Fax: +496831 - 1664576<br>
+                mobil: +49160 - 91658332<br></div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

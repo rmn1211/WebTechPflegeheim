@@ -1,0 +1,28 @@
+.footer-container{
+	display: flex;
+	justify-content: center;
+	background-color: rgb(247, 250, 76);
+	height: 190px;
+}
+.footer-item
+{
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	background-color: transparent;
+	font-size: x-large;
+	cursor: pointer;
+	float: left;
+}
+.footer-link{
+	padding: 70px;
+}
+.footer-contact
+{
+	color: rgb(0, 0, 0);
+	text-align: left;
+	font-weight: bold;
+	font-size: large;
+	padding: 20px;
+}
