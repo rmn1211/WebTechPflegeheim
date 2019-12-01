@@ -4,7 +4,7 @@
 	align-items: center;
 	/*background-color: rgb(247, 250, 76);*/
 	background-color: #fff066;
-	height: 100px;
+	height: 90px;
  }
 
 .menu-item, .menu-dropdown
@@ -22,7 +22,7 @@
 	font-size: x-large;
 	cursor: pointer;
 	float: left;
-	padding: 30px;	
+	padding: 20px;	
 	-ms-user-select: None;
     -moz-user-select: None;
     -webkit-user-select: None; 
