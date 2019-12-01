@@ -1,0 +1,26 @@
+.mainmenu-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(247, 250, 76);
+	height: 100px;
+ }
+
+.menu-item
+{
+	border: 2px solid #fff;
+	width: 20%;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	background-color: transparent;
+	font-size: x-large;
+	cursor: pointer;
+	float: left;
+	padding: 30px;	
+}
+.menu-item:hover
+{
+	background-color: #f17e12;
+}
