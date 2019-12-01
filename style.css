@@ -2,7 +2,7 @@ body, html {
     height: 100%;
 }
 .main{
-    
+  
     background-color: #ffffff;
     font-family: Roboto, Tahoma, Verdana, Arial;
     color: #000000;
@@ -69,13 +69,14 @@ body, html {
 
 }
 .slideshow{
-    background-color: rgba(206, 206, 206, 0.349) ;
+    background-color: #fff066c4 ;
     max-width: 1000px;
     min-width: 500px;
     margin-bottom: 20px;
 
 }
 .bild{
+  cursor: pointer;
     max-width: 50%;
     max-height: auto;
 }
