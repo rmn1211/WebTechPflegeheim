@@ -42,6 +42,9 @@
 </head>
 
 <body class="main" onload="showSlides(1);">
+    <div style="text-align: center; background-color: #fff066;">
+        <img src="img/title.png" alt="Titelbild" height="600px" width="65%">
+    </div>
     <div class="mainmenu-container">
         <div class="menu-item" aria-current="page">
             Dienstleistungen
@@ -62,40 +65,50 @@
 
     <h1 align="center">Dienstleistungen</h1>
 
-    <table>
-        <tr>
-            <td class="content">
-                <p>Öffnungszeiten Mo. und Do. von 15.00 Uhr bis 18.00 Uhr und nach Absprache.</p>
-                <p> </p>
-                <p>Unser Betreuungsangebot richtet sich an pflegebedürftige Menschen mit oder ohne Behinderungen, also
-                    Menschen, die wegen der Berufstätigkeit ihrer Angehörigen
-                    tagsüber bzw. stundenweise nicht ohne Betreuung bleiben können.</p>
-                <p> </p>
-                <p>Sie können in unserem Seniorengarten in geselliger Runde Kontakte knüpfen, gemeinsam kochen oder
-                    backen, am kulturellen und sozialen Leben in der Gemeinschaft
-                    teilhaben.</p>
-                <p> </p>
-                <p>Bei schönem Wetter lädt unser Garten zum Aufenthalt im Freien ein.</p>
-                <p>Wenn erwünscht bzw.erforderlich, geben wir auch Hilfestellung bei der Nahrungsaufnahme, der
-                    Medikamenteneinnahme und bei Toilettengängen.</p>
-                <p> </p>
-                <p>Eine behindertengerechte sanitäre Einrichtung steht zur Verfügung.</p>
-                <p> </p>
-                <p>Die Betreuung kann tages-oder stundenweise in Anspruch genommen werden, wobei das
-                    Beschäftigungsangebot immer flexibel und patientengerecht abgestimmt
-                    ist.</p>
-                <p> </p>
-                <p>Die Betreuungsleistungen können mit der Pflegekasse abgerechnet werden. Auch können diese Leistungen
-                    als Verhinderungspflege in Anspruch genommen werden.</p>
-
+    <div class="content-container">
+        <div class="content-text">
+            <h2 align="center">Seniorengarten</h2>
+            <p>Öffnungszeiten Mo. und Do. von 15.00 Uhr bis 18.00 Uhr und nach Absprache.</p>
+            <p> </p>
+            <p>Unser Betreuungsangebot richtet sich an pflegebedürftige Menschen mit oder ohne Behinderungen, also
+                Menschen, die wegen der Berufstätigkeit ihrer Angehörigen
+                tagsüber bzw. stundenweise nicht ohne Betreuung bleiben können.</p>
+            <p> </p>
+            <p>Sie können in unserem Seniorengarten in geselliger Runde Kontakte knüpfen, gemeinsam kochen oder
+                backen, am kulturellen und sozialen Leben in der Gemeinschaft
+                teilhaben.</p>
+            <p> </p>
+            <p>Bei schönem Wetter lädt unser Garten zum Aufenthalt im Freien ein.</p>
+            <p>Wenn erwünscht bzw.erforderlich, geben wir auch Hilfestellung bei der Nahrungsaufnahme, der
+                Medikamenteneinnahme und bei Toilettengängen.</p>
+            <p> </p>
+            <p>Eine behindertengerechte sanitäre Einrichtung steht zur Verfügung.</p>
+            <p> </p>
+            <p>Die Betreuung kann tages-oder stundenweise in Anspruch genommen werden, wobei das
+                Beschäftigungsangebot immer flexibel und patientengerecht abgestimmt
+                ist.</p>
+            <p> </p>
+            <p>Die Betreuungsleistungen können mit der Pflegekasse abgerechnet werden. Auch können diese Leistungen
+                als Verhinderungspflege in Anspruch genommen werden.</p>
+            <br>
+            <br>
+            <h2 align="center">Ambulanter Pflegedienst</h2>
+            <p>lorem ipsum et dolor</p>
+        </div>
+        <table>
+            <td style="background-color:  #fff066">
+                <h2 align="center">Formulare:</h2>
+                <div class="right-menu">
+                    <ul>
+                        <li class="right-menu-item"><a href="#">Pflegeanfrage</a></li>
+                        <li class="right-menu-item"><a href="#">Beratungsgespräch</a></li>
+                    </ul>
+                </div>
             </td>
-            <td class="right-menu">
-                <div class="right-menu-item"><a href="#">Konkrete Pflegeanfrage</a></div>
-                <div class="right-menu-item"><a href="#">Beratungsgespräch</a></div>
-            </td>
-        </tr>
+        </table>
 
-    </table>
+    </div>
+
 
     <p align="center">
         <div class="slideshow-container">
@@ -140,17 +153,17 @@
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
         </div>
     </p>
     <br>
@@ -186,7 +199,7 @@
                 66740 Saarlouis<br>
                 Tel.: +496831 - 5052200<br>
                 Fax: +496831 - 1664576<br>
-                mobil: +49160 - 91658332<br></div>
+                Mobil: +49160 - 91658332<br></div>
 
 
         </div>

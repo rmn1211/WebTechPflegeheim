@@ -2,13 +2,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(247, 250, 76);
+	/*background-color: rgb(247, 250, 76);*/
+	background-color: #fff066;
 	height: 100px;
  }
 
 .menu-item
 {
-	border: 2px solid #fff;
+	border: 3px solid rgb(255, 255, 255);
 	width: 20%;
 	font-weight: bold;
 	display: flex;
