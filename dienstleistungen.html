@@ -43,29 +43,32 @@
 
 <body class="main" onload="showSlides(1);">
     <div style="text-align: center; background-color: #fff066;">
-        <img src="img/title.png" alt="Titelbild" height="600px" width="65%"
-            onclick="window.location.replace('home.html')">
     </div>
-    <div class="mainmenu-container">
-        <div class="menu-dropdown" aria-current="page">
-            <div>Dienstleistungen</div>
-            <div><div class="menu-dropdown-elem">Über Uns</div><div class="menu-dropdown-elem">Seniorengarten</div>
-            <div class="menu-dropdown-elem">Anmeldung</div></div>
-        </div>
-        
-        <div class="menu-item">
-            Allgemeine Informationen
-        </div>
-        <div class="menu-item">
-            Rechner
-        </div>
-        <div class="menu-item">
-            Kontakt
-        </div>
-        <div class="menu-item">
-            Jobangebote
-        </div>
-    </div>
+    <body class = "main">
+            <div class = "background">
+                <div>
+                    <img src="img/title.png" alt="Titelbild" onclick="window.location.replace('home.html')" class="titleimg">
+                </div>
+                <div class = "navbar">
+                        <div class = "dropdownbtn">
+                                Allgemeine Infos 
+                                <div class="dropdownelem" onclick="window.location.replace('allgemeineinfos.html')">&Uuml;ber Uns</div>
+                                <div class="dropdownelem">Seniorengarten</div>
+                                <div class="dropdownelem">Anmeldung</div>  
+                            </div>
+                    <div class = "navelem"onclick="window.location.replace('dienstleistungen.html')">
+                        Dienstleistungen
+                    </div>
+                    <div class = "navelem">
+                        Rechner
+                    </div>
+                    <div class = "navelem" onclick="window.location.replace('Kontakte.html')">
+                        Kontakt
+                    </div>
+                    <div class = "navelem">
+                        Jobangebote
+                    </div>
+                </div>
 
     <h1 align="center">Dienstleistungen</h1>
 
