@@ -3,6 +3,10 @@
 	justify-content: center;
 	background-color: rgb(247, 250, 76);
 	height: 190px;
+	clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
 }
 .footer-item
 {

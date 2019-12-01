@@ -8,7 +8,7 @@ body, html {
     color: #000000;
 }
 .titleimg{
-    height: 600px;
+    height: 400px;
     width: auto;
     display: block;
     margin: 0 auto;
@@ -50,6 +50,7 @@ body, html {
     text-align: left;
   	position: relative;
     margin-top: 10%;
+    float: right;
 }
 .dropdownelem{
     display: none;

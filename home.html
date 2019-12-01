@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel ="stylesheet" type="text/css" href="style.css">
+         <link rel ="stylesheet" type="text/css" href="footer.css">
     </head>
     <body class = "main">
         <div class = "background">
@@ -10,13 +11,14 @@
                 <img src="img/title.png" alt="Titelbild" onclick="window.location.replace('home.html')" class="titleimg">
             </div>
             <div class = "navbar">
-                <div class = "dropdown">
+                    <div class = "dropdown">
+                            Allgemeine Infos 
+                            <div class="dropdownelem" onclick="window.location.replace('allgemeineinfos.html')">&Uuml;ber Uns</div>
+                            <div class="dropdownelem">Seniorengarten</div>
+                            <div class="dropdownelem">Anmeldung</div>  
+                        </div>
+                <div class = "navelem"onclick="window.location.replace('dienstleistungen.html')">
                     Dienstleistungen
-                    <div class="dropdownelem">Seniorengarten</div>
-                    <div class="dropdownelem">Anmeldung</div>
-                </div>
-                <div class = "navelem">
-                    Allgemeine Infos   
                 </div>
                 <div class = "navelem">
                     Rechner
@@ -69,5 +71,31 @@
            </div>
 
         </div>
+        <footer class="footer-container">
+
+                <div class="footer-item">
+                    <div class="footer-link"><a href="impressum.html" class="footbar">Impressum
+                        </a></div>
+        
+                </div>
+                <div class="footer-item">
+                    <div class="footer-link"><a href="datenschutz.html" class="footbar">
+                            Datenschutzerkl&auml;rung
+                        </a></div>
+        
+                </div>
+        
+                <div class="footer-item">
+                    <div class="footer-contact">
+                        Kontakt: <br>Karin Weirich<br>
+                        St. Avolder Str. 72<br>
+                        66740 Saarlouis<br>
+                        Tel.: +496831 - 5052200<br>
+                        Fax: +496831 - 1664576<br>
+                        Mobil: +49160 - 91658332<br></div>
+        
+        
+                </div>
+            </footer>
     </body>
 </html>
