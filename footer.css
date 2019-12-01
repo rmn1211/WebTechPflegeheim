@@ -10,12 +10,14 @@
 }
 .footer-item
 {
+	border: 2px solid rgb(255, 255, 255);
 	width: 30%;
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
 	background-color: transparent;
 	font-size: x-large;
+	font-weight: bolder;
 	cursor: pointer;
 	float: left;
 }

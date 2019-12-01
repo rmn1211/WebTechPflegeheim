@@ -43,12 +43,16 @@
 
 <body class="main" onload="showSlides(1);">
     <div style="text-align: center; background-color: #fff066;">
-        <img src="img/title.png" alt="Titelbild" height="600px" width="65%">
+        <img src="img/title.png" alt="Titelbild" height="600px" width="65%"
+            onclick="window.location.replace('home.html')">
     </div>
     <div class="mainmenu-container">
-        <div class="menu-item" aria-current="page">
-            Dienstleistungen
+        <div class="menu-dropdown" aria-current="page">
+            <div>Dienstleistungen</div>
+            <div><div class="menu-dropdown-elem">Über Uns</div><div class="menu-dropdown-elem">Seniorengarten</div>
+            <div class="menu-dropdown-elem">Anmeldung</div></div>
         </div>
+        
         <div class="menu-item">
             Allgemeine Informationen
         </div>
