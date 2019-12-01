@@ -21,6 +21,7 @@ body, html {
     margin-left: 5%;
     margin-right: 5%;
 }
+/*Whole Navigation Bar*/
 .navbar{
     
     width: 100%;
@@ -30,6 +31,7 @@ body, html {
     
 
 }
+/*Single elements on the Bar*/
 .navelem, .dropdown{
     width: 20%;
 	height: 10%;
@@ -40,18 +42,21 @@ body, html {
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
+    border: none;
     text-align: center;
     -ms-user-select: None;
     -moz-user-select: None;
     -webkit-user-select: None; 
     
 }
+
 .content{
     text-align: left;
   	position: relative;
     margin-top: 10%;
     float: right;
 }
+/*Elements from the Drop Down Menu*/
 .dropdownelem{
     display: none;
     padding-right: 2%;
@@ -64,7 +69,7 @@ body, html {
 
 }
 .slideshow{
-    background-color: rgb(206, 206, 206) ;
+    background-color: rgba(206, 206, 206, 0.349) ;
     max-width: 1000px;
     min-width: 500px;
     margin-bottom: 20px;
