@@ -11,26 +11,20 @@
             <div>
                 <img src="img/title.png" alt="Titelbild" onclick="window.location.replace('home.html')" class="titleimg">
             </div>
-            <div class = "navbar">
-                    <div class = "dropdownbtn">
-                            Allgemeine Infos 
-                            <div class="dropdownelem" onclick="window.location.replace('allgemeineinfos.html')">&Uuml;ber Uns</div>
-                            <div class="dropdownelem">Seniorengarten</div>
-                            <div class="dropdownelem">Anmeldung</div>  
-                        </div>
-                <div class = "navelem"onclick="window.location.replace('dienstleistungen.html')">
-                    Dienstleistungen
-                </div>
-                <div class = "navelem">
-                    Rechner
-                </div>
-                <div class = "navelem" onclick="window.location.replace('Kontakte.html')">
-                    Kontakt
-                </div>
-                <div class = "navelem">
-                    Jobangebote
-                </div>
-            </div>
+            <ul class = "navbar">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdownbtn">Allgemeine Infos</a>
+                    <div class ="dropdowncont">
+                        <a href="AllgemeineInfos.html">&Uuml;ber uns</a>
+                        <a href="seniorengarten.html">Seniorengarten</a>
+                        <a href="#">Anmeldung</a>
+                    </div>
+                </li>
+                <li class="navelem"><a href="dienstleistungen.html">Dienstleistungen</a></li>
+                <li class="navelem"><a href="rechner.html">Rechner</a></li>
+                <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
+                <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
+            </ul>
            <div class = "content">
                <div class = slideshow-container>
                     <div class= "mySlides fade">
@@ -80,10 +74,10 @@
                         66740 Saarlouis<br>
                         Tel.: +496831 - 5052200<br>
                         Fax: +496831 - 1664576<br>
-                        Mobil: +49160 - 91658332<br></div>
-        
-        
+                        Mobil: +49160 - 91658332<br>
+                    </div>
                 </div>
             </footer>
+        </div>
     </body>
 </html>

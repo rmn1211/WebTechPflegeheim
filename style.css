@@ -16,67 +16,75 @@ body, html {
     cursor: pointer;
 }
 .background{
-    
-    min-width: 90%;
-    float: both;
+  float: left;
+  display: block;
+    min-width: 85%;
     margin-left: 5%;
     margin-right: 5%;
+    background-color: #faf9f9;
 }
-/*Whole Navigation Bar*/
-.navbar{
-    
-    width: 100%;
-    background-color: #fff066 ;
-    text-align: center;
+/*Navigation Bar*/
 
-    
-
+.navbar {
+  width: 90%;
+  list-style-type: none;
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff066;
+  padding: 0%;
+  margin: 20px;
 }
-/*Single elements on the Bar*/
-.navelem, .dropdownbtn{
-    width: 20%;
-	height: 10%;
-    float: left;
-    font-size: large;
-    cursor: pointer;
-    background-color: #fff066;
-    border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    -ms-user-select: None;
-    -moz-user-select: None;
-    -webkit-user-select: None; 
-    
-}
-
 .dropdownbtn{
-  position: relative;
-  display: block;
-  z-index:1;
+  cursor: pointer;
 }
-/*Contains Content on home*/
-.content{
-  width: 100%;
-    text-align: left;
-  	position: relative;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    float: left;
-}
-/*Elements from the Drop Down Menu*/
-.dropdownelem{
-    width: 100%;
-	  height: 100%;
-    display: none;
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: relative;
-	  background-color: #fff066;
-    border-top: 1px solid #000000;
 
+.dropdown, .navelem{
+  width: 20%;       /*Zum Ausfüllen der gesamten Navbar*/
+  float: left;      /*Fluss der Navbar von links nach rechts*/
 }
+.navelem a, .dropdownbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropdownbtn {
+  background-color: #eed600;
+}
+
+
+li.dropdown{
+  
+  display: inline-block;
+}  
+
+.dropdowncont{
+    display: none;
+    position: absolute;
+    background-color: #fff066;
+    padding-top: 14px;
+    width: 20%;
+    padding-bottom: 14px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdowncont a{
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdowncont {display: block;}
+.dropdowncont a:hover {background-color: #eed600;}
+.dropdown:hover .dropdownbtn {background-color: #eed600;}
+/*End Navigationbar*/
+
+
+
 .slideshow{
     background-color: #fff066c4 ;
     max-width: 1000px;
@@ -99,14 +107,8 @@ body, html {
     
 }
 
-.navelem:hover,.dropdownelem:hover{
-    background-color: #eed600;
-    text-decoration: underline;
-    font-weight: 600;
-}
-.dropdownbtn:hover .dropdownelem{
-  display: block;
-}
+
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
