@@ -21,51 +21,59 @@ body, html {
     min-width: 85%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #faf9f9;
+    background-color: #8f8f8f;
 }
 /*Navigation Bar*/
 
+.icon{
+  float: left;
+  cursor: pointer;
+}
 .navbar {
-  width: 90%;
+  font-size: 20px;
+  width: 100%;
   list-style-type: none;
   text-align: center;
   overflow: hidden;
-  background-color: #fff066;
+  background-color: #6ab30b;
   padding: 0%;
-  margin: 20px;
 }
 .dropdownbtn{
   cursor: pointer;
 }
 
 .dropdown, .navelem{
-  width: 20%;       /*Zum Ausfüllen der gesamten Navbar*/
-  float: left;      /*Fluss der Navbar von links nach rechts*/
+  width: 17%;       /*Zum Ausfüllen der gesamten Navbar*/
+  float: right;      /*Fluss der Navbar von links nach rechts*/
 }
 .navelem a, .dropdownbtn {
   display: inline-block;
   color: black;
   text-align: center;
   width: 100%;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  margin-top: 30px;
+  padding-bottom: 3px;
   text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropdownbtn {
-  background-color: #eed600;
+  /*background-color: #eed600;*/
+  color: #4e5058;
+  text-decoration: underline;
 }
+
 
 
 li.dropdown{
   
   display: inline-block;
+  
 }  
 
-.dropdowncont{
+.dropdowncont{ /*DropDown Box*/
     display: none;
     position: absolute;
-    background-color: #fff066;
+    background-color: #6ab30b;
     padding-top: 14px;
     width: 20%;
     padding-bottom: 14px;
@@ -79,8 +87,8 @@ li.dropdown{
   display: block;
 }
 .dropdown:hover .dropdowncont {display: block;}
-.dropdowncont a:hover {background-color: #eed600;}
-.dropdown:hover .dropdownbtn {background-color: #eed600;}
+/*.dropdowncont a:hover {background-color: #eed600;}
+.dropdown:hover .dropdownbtn {background-color: #eed600;}*/
 /*End Navigationbar*/
 
 

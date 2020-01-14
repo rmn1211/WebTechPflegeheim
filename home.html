@@ -7,33 +7,35 @@
          <title>KaWei Pflegedienst</title>
     </head>
     <body class = "main">
+        <ul class = "navbar">
+            <li><img src = "img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"class = "icon"> </li>
+            <li class="navelem"><a href="dienstleistungen.html">Dienstleistungen</a></li>
+            <li class="navelem"><a href="rechner.html">Rechner</a></li>
+            <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
+            <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdownbtn">Allgemeine Infos</a>
+                <div class ="dropdowncont">
+                    <a href="AllgemeineInfos.html">&Uuml;ber uns</a>
+                    <a href="seniorengarten.html">Seniorengarten</a>
+                    <a href="#">Anmeldung</a>
+                </div>
+            </li>   
+        </ul>
         <div class = "background">
             <div>
                 <img src="img/title.png" alt="Titelbild" onclick="window.location.replace('home.html')" class="titleimg">
             </div>
-            <ul class = "navbar">
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdownbtn">Allgemeine Infos</a>
-                    <div class ="dropdowncont">
-                        <a href="AllgemeineInfos.html">&Uuml;ber uns</a>
-                        <a href="seniorengarten.html">Seniorengarten</a>
-                        <a href="#">Anmeldung</a>
-                    </div>
-                </li>
-                <li class="navelem"><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                <li class="navelem"><a href="rechner.html">Rechner</a></li>
-                <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
-                <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
-            </ul>
+            
            <div class = "content">
                <div class = slideshow-container>
                     <div class= "mySlides fade">
                         <div class="slideshow">
-                        <div>
-                            <img src="img/slide1.jpg" alt="1"class = "bild" onclick="window.location.replace('allgemeineinfos.html')">
-                                 <div class ="texthome">
-                                     <b>Ambulante Pflege in ihrer H&auml;uslichkeit</b>
-                                     <ul>
+                            <div>
+                                <img src="img/slide1.jpg" alt="1"class = "bild" onclick="window.location.replace('allgemeineinfos.html')">
+                                <div class ="texthome">
+                                    <b>Ambulante Pflege in ihrer H&auml;uslichkeit</b>
+                                    <ul>
                                         <li>H&auml;usliche Betreuung</li>
                                         <li>Hauswirtschaftliche Versorgung</li>
                                         <li>24h Bereitschaftsdienst f&uuml;r Notf&auml;lle</li>
@@ -41,13 +43,12 @@
                                             <ol>Arztbesuche</ol>
                                             <ol>Beh&ouml;rdeng&auml;nge</ol>
                                             <ol>uvm.</ol>
-                                         <li>Verhinderungspflege</li>
-
-                                     </ul>
+                                        <li>Verhinderungspflege</li>
+                                    </ul>
                                 </div>
                             </div>
-                   </div>
-                </div>
+                        </div>
+                    </div>
                 <a class="prev">&#10094;</a>
                 <a class ="next">&#10095;</a>
            </div>
