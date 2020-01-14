@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
 }
+.mySlides{display: none;}
 .main{
     margin-top: 0%;
     background-color: #ffffff;
@@ -19,6 +20,7 @@ body, html {
   float: left;
   display: block;
     min-width: 85%;
+    height: 100%;
     margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
@@ -31,9 +33,11 @@ body, html {
   width: 100%;
   z-index: 1; /*Steuert Überlappen von Elementen*/
 }
-.icon{
+.logo{
   float: left;
   cursor: pointer;
+  width: auto;
+  max-height: 80px;
 }
 .navbar {
   font-size: 20px;
@@ -44,6 +48,7 @@ body, html {
   background-color: #6ab30b;
   padding: 0%;
   margin-top: 0%;
+  max-height: 80px;
 }
 .dropdownbtn{
   cursor: pointer;
@@ -54,6 +59,7 @@ body, html {
   border-bottom: hidden;
   border-right: hidden;
   border-top: hidden;
+  
 }
 .dropdown, .navelem{
   width: 17%;       /*Zum Ausfüllen der gesamten Navbar*/
@@ -65,7 +71,7 @@ body, html {
   text-align: center;
   width: 100%;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   text-decoration: none;
   
   
