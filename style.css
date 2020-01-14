@@ -2,7 +2,7 @@ body, html {
     height: 100%;
 }
 .main{
-  
+    margin-top: 0%;
     background-color: #ffffff;
     width: 100%;
     font-family: Roboto, Tahoma, Verdana, Arial;
@@ -19,12 +19,18 @@ body, html {
   float: left;
   display: block;
     min-width: 85%;
+    margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
     background-color: #8f8f8f;
+    
 }
 /*Navigation Bar*/
-
+.fixedcontainer{
+  position: fixed;
+  width: 100%;
+  z-index: 1; /*Steuert Überlappen von Elementen*/
+}
 .icon{
   float: left;
   cursor: pointer;
@@ -37,11 +43,18 @@ body, html {
   overflow: hidden;
   background-color: #6ab30b;
   padding: 0%;
+  margin-top: 0%;
 }
 .dropdownbtn{
   cursor: pointer;
 }
-
+.navelem{
+  border: 1px solid;
+  border-left-color: black;
+  border-bottom: hidden;
+  border-right: hidden;
+  border-top: hidden;
+}
 .dropdown, .navelem{
   width: 17%;       /*Zum Ausfüllen der gesamten Navbar*/
   float: right;      /*Fluss der Navbar von links nach rechts*/
@@ -52,8 +65,10 @@ body, html {
   text-align: center;
   width: 100%;
   margin-top: 30px;
-  padding-bottom: 3px;
+  padding-bottom: 30px;
   text-decoration: none;
+  
+  
 }
 
 li a:hover, .dropdown:hover .dropdownbtn {
@@ -67,6 +82,7 @@ li a:hover, .dropdown:hover .dropdownbtn {
 li.dropdown{
   
   display: inline-block;
+
   
 }  
 
@@ -78,21 +94,28 @@ li.dropdown{
     width: 20%;
     padding-bottom: 14px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
+    
 }
 .dropdowncont a{
   color: black;
   padding: 12px;
   text-decoration: none;
   display: block;
+  
 }
 .dropdown:hover .dropdowncont {display: block;}
 /*.dropdowncont a:hover {background-color: #eed600;}
 .dropdown:hover .dropdownbtn {background-color: #eed600;}*/
 /*End Navigationbar*/
 
+/*Slideshow Home*/
 
 
+/*End SlideSHow Home*/
+.content{
+  min-height: 700px;
+}
 .slideshow{
     background-color: #fff066c4 ;
     max-width: 1000px;
