@@ -109,9 +109,27 @@ li.dropdown{
   min-width: 500px;
   margin-bottom: 20px;
 }
+.texthome{
+  float: right;
+  font-size: 15pt;
+  text-align: left;
+  line-height: 200%;
+  position: relative;
+  margin: top;
+  
+}
 
 .mySlides{
   display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+
+  max-height: auto;
+  position: relative;
+  margin: auto;
 }
 
 /*End SlideSHow Home*/
@@ -125,13 +143,7 @@ li.dropdown{
     max-height: auto;
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    max-height: auto;
-    position: relative;
-    margin: auto;
-  }
+
   
   /* Next & previous buttons */
   .prev, .next {
