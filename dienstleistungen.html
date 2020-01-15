@@ -41,30 +41,26 @@
     </script>
 </head>
 
-<body class="main" onload="showSlides(1);">
-    <div style="text-align: center; background-color: #fff066;">
+<body class = "main" onload="showSlides(1)">
+    <div class ="fixedcontainer">
+    <ul class = "navbar">
+        <li><img src = "img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"class = "logo"> </li>
+        <li class="navelem"><a href="jobs.html">Jobangebote</a></li>            
+        <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
+        <li class="navelem"><a href="rechner.html">Rechner</a></li>
+        <li class="navelem"><a href="dienstleistungen.html">Dienstleistungen</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdownbtn">Allgemeine Infos</a>
+            <div class ="dropdowncont">
+                <a href="AllgemeineInfos.html">&Uuml;ber uns</a>
+                <a href="seniorengarten.html">Seniorengarten</a>
+                <a href="#">Anmeldung</a>
+            </div>
+        </li>   
+    </ul>
     </div>
-    <body class = "main">
-            <div class = "background">
-                <div>
-                    <img src="img/title.png" alt="Titelbild" onclick="window.location.replace('home.html')" class="titleimg">
-                </div>
-                <ul class = "navbar">
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropdownbtn">Allgemeine Infos</a>
-                        <div class ="dropdowncont">
-                            <a href="AllgemeineInfos.html">&Uuml;ber uns</a>
-                            <a href="seniorengarten.html">Seniorengarten</a>
-                            <a href="#">Anmeldung</a>
-                        </div>
-                    </li>
-                    <li class="navelem"><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                    <li class="navelem"><a href="rechner.html">Rechner</a></li>
-                    <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
-                    <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
-                </ul>
-
-    <h1 align="center">Dienstleistungen</h1>
+    <br>
+    <h1>Dienstleistungen</h1>
 
     <div class="content-container">
         <div class="content-text">
@@ -167,42 +163,20 @@
             </div>
         </div>
     </p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer class="footer-container">
 
-        <div class="footer-item">
-            <div class="footer-link"><a href="impressum.html" class="footbar">Impressum
-                </a></div>
-
+    <footer>
+        <div class="footerelem"><a href="impressum.html" class="footerlink">Impressum
+        </a></div>
+        <div class="footerelem"><a href="datenschutz.html" class="footerlink">
+            Datenschutzerkl&auml;rung
+        </a>
         </div>
-        <div class="footer-item">
-            <div class="footer-link"><a href="datenschutz.html" class="footbar">
-                    Datenschutzerkl&auml;rung
-                </a></div>
-
-        </div>
-
-        <div class="footer-item">
-            <div class="footer-contact">
-                Kontakt: <br>Karin Weirich<br>
-                St. Avolder Str. 72<br>
-                66740 Saarlouis<br>
-                Tel.: +496831 - 5052200<br>
-                Fax: +496831 - 1664576<br>
-                Mobil: +49160 - 91658332<br></div>
-
-
+        <div class="footerelem"><p class="footertext">Karin Weirich<br>
+            St. Avolder Str. 72<br>
+            66740 Saarlouis<br>
+            Tel.: +496831 - 5052200<br>
+            Fax: +496831 - 1664576<br>
+            Mobil: +49160 - 91658332<br></p> 
         </div>
     </footer>
 </body>
