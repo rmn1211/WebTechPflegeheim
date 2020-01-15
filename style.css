@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
 }
-.mySlides{display: none;}
+
 .main{
     margin-top: 0%;
     background-color: #ffffff;
@@ -24,7 +24,7 @@ body, html {
     margin-top: 100px;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #8f8f8f;
+    background-color: #ffffff;
     
 }
 /*Navigation Bar*/
@@ -37,41 +37,37 @@ body, html {
   float: left;
   cursor: pointer;
   width: auto;
-  max-height: 80px;
+  height: 50px;
 }
 .navbar {
-  font-size: 20px;
+  font-size: 17px;
   width: 100%;
   list-style-type: none;
   text-align: center;
   overflow: hidden;
-  background-color: #6ab30b;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px 0px #000000;
   padding: 0%;
   margin-top: 0%;
-  max-height: 80px;
+  max-height: 3%;
 }
 .dropdownbtn{
   cursor: pointer;
 }
 .navelem{
-  border: 1px solid;
-  border-left-color: black;
-  border-bottom: hidden;
-  border-right: hidden;
-  border-top: hidden;
+ 
   
 }
 .dropdown, .navelem{
-  width: 17%;       /*Zum Ausfüllen der gesamten Navbar*/
-  float: right;      /*Fluss der Navbar von links nach rechts*/
+  width: 18%;       /*Zum Ausfüllen der gesamten Navbar*/
+  float: right;
+  margin-top: 13px;      /*Fluss der Navbar von links nach rechts*/
 }
 .navelem a, .dropdownbtn {
   display: inline-block;
   color: black;
   text-align: center;
   width: 100%;
-  margin-top: 30px;
-  padding-bottom: 20px;
   text-decoration: none;
   
   
@@ -116,35 +112,27 @@ li.dropdown{
 /*End Navigationbar*/
 
 /*Slideshow Home*/
+.slideshow{
+  background-color: #fff066c4 ;
+  max-width: 100%;
+  min-width: 500px;
+  margin-bottom: 20px;
+}
 
+.mySlides{
+  display: none;
+}
 
 /*End SlideSHow Home*/
 .content{
   min-height: 700px;
 }
-.slideshow{
-    background-color: #fff066c4 ;
-    max-width: 1000px;
-    min-width: 500px;
-    margin-bottom: 20px;
 
-}
 .bild{
   cursor: pointer;
     max-width: 50%;
     max-height: auto;
 }
-.texthome{
-    float: right;
-    font-size: 16pt;
-    text-align: left;
-    line-height: 200%;
-    position: relative;
-    margin: top;
-    
-}
-
-
 
 /* Slideshow container */
 .slideshow-container {
