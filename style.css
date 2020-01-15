@@ -1,11 +1,13 @@
 body, html {
     height: 100%;
+    width: 100%;
 }
 
 .main{
     margin-top: 0%;
     background-color: #ffffff;
     width: 100%;
+    margin-left: 0;
     font-family: Roboto, Tahoma, Verdana, Arial;
     color: #000000;
 }
@@ -91,7 +93,7 @@ li.dropdown{
 .dropdowncont{ /*DropDown Box*/
     display: none;
     position: absolute;
-    background-color: #6ab30b;
+    background-color: #ffffff;
     padding-top: 14px;
     width: 20%;
     padding-bottom: 14px;
