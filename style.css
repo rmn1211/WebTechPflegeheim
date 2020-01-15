@@ -11,12 +11,10 @@ body, html {
     font-family: Roboto, Tahoma, Verdana, Arial;
     color: #000000;
 }
-.titleimg{
-    height: 400px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
+h1{
+  margin-top: 5%;
+  text-align: center;
+  position: relative;
 }
 .background{
   float: left;
@@ -56,7 +54,6 @@ body, html {
 .dropdownbtn{
   cursor: pointer;
 }
-
 .dropdown, .navelem{
   width: 18%;       /*Zum Ausfüllen der gesamten Navbar*/
   float: right;
@@ -71,22 +68,17 @@ body, html {
   
   
 }
-
 li a:hover, .dropdown:hover .dropdownbtn {
   /*background-color: #eed600;*/
   color: #4e5058;
   text-decoration: underline;
 }
-
-
-
 li.dropdown{
   
   display: inline-block;
 
   
 }  
-
 .dropdowncont{ /*DropDown Box*/
     display: none;
     position: absolute;
@@ -136,6 +128,7 @@ li.dropdown{
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
+    max-height: auto;
     position: relative;
     margin: auto;
   }
@@ -253,6 +246,36 @@ li.dropdown{
   
   .right-menu-item:hover{
     background-color: #f17e12;;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    background-color: #e2b36b;
+    width: 100%;
+    height: 20%;
+    list-style-type: none;
+    z-index: 1;
+  }
+  .footerelem{
+    float: left;
+    color: black;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+  }
+  .footerlink{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .footerlink:hover{
+    color: #4e5058;
+    text-decoration: underline;
+  }
+  .footertext{
+    text-align: left;
+    font-size: small;
+    margin-left: 30%;
   }
   
 
