@@ -56,10 +56,7 @@ body, html {
 .dropdownbtn{
   cursor: pointer;
 }
-.navelem{
- 
-  
-}
+
 .dropdown, .navelem{
   width: 18%;       /*Zum Ausfüllen der gesamten Navbar*/
   float: right;
@@ -115,7 +112,7 @@ li.dropdown{
 
 /*Slideshow Home*/
 .slideshow{
-  background-color: #fff066c4 ;
+  background-color: #ffffff;
   max-width: 100%;
   min-width: 500px;
   margin-bottom: 20px;
