@@ -105,7 +105,8 @@ li.dropdown{
 /*Slideshow Home*/
 .slideshow{
   background-color: #ffffff;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   min-width: 500px;
   margin-bottom: 20px;
 }
@@ -115,8 +116,7 @@ li.dropdown{
   text-align: left;
   line-height: 200%;
   position: relative;
-  margin: top;
-  
+  margin-right: 15%;  
 }
 
 .mySlides{
@@ -135,6 +135,12 @@ li.dropdown{
 /*End SlideSHow Home*/
 .content{
   min-height: 700px;
+}
+.contenthome{
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bild{
