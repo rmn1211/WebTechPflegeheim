@@ -2,9 +2,9 @@
 <html lang="de">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <script src="calculator.js"></script>
         <link rel ="stylesheet" type="text/css" href="style.css">
          <link rel ="stylesheet" type="text/css" href="footer.css">
-         <script src="rechner.js"></script>
          <title>KaWei Pflegedienst</title>
     </head>
     <body class = "main">
@@ -26,7 +26,12 @@
         </div>
         <br>
         <h1>Pflegekostenrechner</h1>
-           <input id="kleinToilette" type="number">
+           <input type="number" id='kleinT' value="0">
+           <br>
+           <output for='kleinT'></output>
+           <br>
+           <input id="grossToilette" type="number">
+           <output for="grossToilette"></output>
         <footer>
             <img src="img/bpa.jpg" class="footerimage">
             <a href="impressum.html" class="footerlink">Impressum</a>
