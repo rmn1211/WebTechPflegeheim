@@ -266,4 +266,22 @@ li.dropdown{
 /* ---End Footer--- */
 
 
-
+.JobsContainer{
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3%;
+  align-items: center;
+  margin: 3%;
+  width: 87%;
+  box-shadow: 0 0px 20px 0px #e2b36b;
+  border-radius: 25px;
+  border: 1px solid #e2b36b;
+  background-color:white;
+}
+.JobsItem{
+  max-width: 40%;
+  position: relative;
+  margin: auto;
+}
