@@ -1,11 +1,8 @@
-var pflegestufe = 2;
 
 //Kleine Morgen-/Abendtoilette
 const kostKT =14.24;
 const iKT = 0.72;
 var gesKT= 0;
-const kleinT = document.getElementById('kleinT');
-const kleinTout = document.querySelector("output[for='kleinT']");
 
 //Große Morgen-/Abendtoilette
 const kostGT = 22.55;
@@ -77,22 +74,40 @@ const pg3 = 1298;
 const pg4 = 1612;
 const pg5 = 1995;
 
+var pflegestufe = 0;
 var gesKost = 0;
 var pflegeKost = 0;
 var invAufw = 0;
 var pflegeRest = 0;
 
-
-kleinT.oninput =function (eve) {
-    kleinTout.value = this.value;
+function main()
+{
+    calcKT();
+    calcGT();
 }
 
-function calcGrosseToilette(anz)
+function calcKT()
 {
-    gesGrosseToilette = anz *(iGrosseToilette+kostGrosseToilette);
+    
+    document.getElementById('kT').oninput = function () {
+        gesKT = this.value * (kostKT+iKT);
+        document.getElementById('oKT').innerHTML = gesKT;
+    }
+
 }
 
-function calcLagern(anz)
+function calcGT()
 {
-    gesLagern= anz * (iLagern+kostLagern);
+    document.getElementById('gT').oninput = function () {
+        gesGT = this.value * (kostGT+iGT);
+        document.getElementById('oGT').innerHTML = gesGT;
+    }
+}
+
+function calcLagern()
+{
+    document.getElementById('lag').oninput = function () {
+        gesLag = this.value * (kostLag+iLag);
+        document.getElementById('oLag').innerHTML = gesLag;
+    }
 }

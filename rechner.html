@@ -7,7 +7,7 @@
          <link rel ="stylesheet" type="text/css" href="footer.css">
          <title>KaWei Pflegedienst</title>
     </head>
-    <body class = "main">
+    <body class = "main" onload="main()">
         <div class ="fixedcontainer">
             <ul class = "navbar">
                 <li><img src = "img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"class = "logo"> </li>
@@ -26,12 +26,45 @@
         </div>
         <br>
         <h1>Pflegekostenrechner</h1>
-           <input type="number" id='kleinT' value="0">
-           <br>
-           <output for='kleinT'></output>
-           <br>
-           <input id="grossToilette" type="number">
-           <output for="grossToilette"></output>
+            Kleine Morgen-/Abendtoilette
+           <input type="number" id='kT' value="0">
+           <div id ="oKT">0</div>
+           Große Morgen-/Abendtoilette
+           <input id="gT" type="number" value="0">
+           <div id ="oGT">0</div>
+           Lagern
+           <input id="lag" type="number" value="0">
+           <div id ="oLag">0</div>
+           Mobilisation
+           <input id="mob" type="number" value="0">
+           <div id ="oMob">0</div>
+           Hilfe bei der Nahrungsaufnahme
+           <input id="nahrung" type="number" value="0">
+           <div id ="oNahrung">0</div>
+           Sonderkost bei implantierter Magensonde (PEG)
+           <input id="peg" type="number" value="0">
+           <div id ="oPeg">0</div>
+           Darm- und Blasenentleerung
+           <input id="dbe" type="number" value="0">
+           <div id ="oDBE">0</div>
+           Hilfestellung Verlassen und Wiederaufsuchen der Wohnung
+           <input id="wohn" type="number" value="0">
+           <div id ="oWohn">0</div>
+            Begleitung bei Aktivit&auml;ten au&szlig;erhalb der Wohnung
+           <input id="begl" type="number" value="0">
+           <div id ="oBegl">0</div>
+           Hauswirtschaftliche Verrichtungen/Std.
+           <input id="hausw" type="number" value="0">
+           <div id ="oHausw">0</div>
+            Erstbesuch/Folgebesuch
+           <input id="erstb" type="number" value="0">
+           <div id ="oErstb">0</div>
+           Leistungen der H&auml;uslichen Betreuung
+           <input id="hausl" type="number" value="0">
+           <div id ="oHausl">0</div>
+           H&auml;usliche Betreuung durch Fachkr&auml;fte
+           <input id="hauslEx" type="number" value="0">
+           <div id ="oHauslEx">0</div>
         <footer>
             <img src="img/bpa.jpg" class="footerimage">
             <a href="impressum.html" class="footerlink">Impressum</a>
