@@ -31,22 +31,31 @@
 
     <div class="content-container">
         <div class="content-item">
-            <form action="/appointment.php">
+            <?php 
+                $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                if (strpos($url, "error") == true) 
+                {
+                    echo "<p style='color: red;'>Es wurden nicht alle erforderlichen Felder ausgefüllt!</p>";
+                }elseif (strpos($url, "success") == true)
+                {
+                    echo "<p style='color: green;'>Anfrage erfolgreich versendet!</p>";
+                }
+            ?>
+            <form action="./appointment.php" method="POST">
                 <p>Wählen Sie die Art Ihrer Terminanfrage: *
                     <select id="appointmenttype" name="appointmenttype">
                         <option value="Tagesbetreuung">Tagesbetreuung im Seniorengarten</option>
                         <option value="Beratung">Beratungsgespräch für ambulante Pflege</option>
                         <option value="KonkreteAnfrage">Konkrete Pflegeanfrage</option>
-                        <option value="audi">Audi</option>
                     </select></p>
                 <p>E-Mail oder Telefonnummer: *
-                    <input type="text" id="email" name="email"></p>
+                    <input type="text" name="email"></p>
                 <p>Von: *
                     <input type="datetime-local" name="fromtime"></p>
                 <p>Bis: *
                     <input type="datetime-local" name="totime"></p>
                 <p>Weitere Informationen:
-                    <textarea id="message" name="message" rows="15" cols="30"></textarea></p>
+                    <textarea name="message" rows="15" cols="30"></textarea></p>
                 <input type="submit" value="Anfrage senden">
             </form>
         </div>

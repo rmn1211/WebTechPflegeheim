@@ -214,9 +214,6 @@ input[type=submit]{
   align-self: center;
   border-radius: 5px;
 }
-.input-required{
-  color: #ff0000;
-}
 /* ---End Form---*/
 
 /* Footer */
