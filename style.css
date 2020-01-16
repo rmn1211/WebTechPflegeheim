@@ -41,6 +41,7 @@ h1{
   text-align: center;
   position: relative;
 }
+
 /*Navigation Bar*/
 .fixedcontainer{
   position: fixed;
@@ -70,8 +71,8 @@ h1{
 }
 .dropdown, .navelem{
   width: 18%;       /*Zum Ausfüllen der gesamten Navbar*/
-  float: right;
-  margin-top: 13px;      /*Fluss der Navbar von links nach rechts*/
+  float: right;     /*Fluss der Navbar von rechts nach links*/
+  margin-top: 13px;      
 }
 .navelem a, .dropdownbtn {
   display: inline-block;
@@ -117,34 +118,68 @@ li.dropdown{
 /*End Navigationbar*/
 
 /*Slideshow Home*/
+.slideshow-container {
+  min-width: 80%;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+}
 .slideshow{
-  background-color: #ffffff;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  margin-bottom: 3%;
+  justify-content: space-around;
+  box-shadow: 0 0px 20px 0px #e2b36b;
+  border-radius: 25px;
+  border: 1px solid #e2b36b;
+  min-width: 800px;
+  min-height: 500px;
+}
+.mySlides{
+  display: none; 
   width: 100%;
   height: auto;
-  min-width: 500px;
-  margin-bottom: 20px;
 }
 .texthome{
+  margin: auto;
   float: right;
-  font-size: 15pt;
+  width: 48%;
+  font-size: 20pt;
   text-align: left;
   line-height: 200%;
   position: relative;
-  margin-right: 15%;  
+   
+}
+.bild{
+  cursor: pointer;
+  width: 50%;
+}
+.prevhome, .nexthome{
+  top: 50%;
+  cursor: pointer;
+  height: 100%;
+  width: 35px;
+  background-color: #e2b36b;
+  opacity: 0.5;
+  transition: 1s;
+  color:white;
+}
+.prevhome{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
-.mySlides{
-  display: none;
+.nexthome{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 80%;
-
-  max-height: auto;
-  position: relative;
-  margin: auto;
+.prevhome:hover, .nexthome:hover{
+  
+  opacity:1; /*Ändert Deckkraft bei Mouseover*/
 }
+
 
 /*End SlideSHow Home*/
 .content{
@@ -157,11 +192,7 @@ li.dropdown{
   justify-content: center;
 }
 
-.bild{
-  cursor: pointer;
-    max-width: 50%;
-    max-height: auto;
-}
+
 
 
   
