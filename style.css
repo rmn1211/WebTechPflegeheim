@@ -6,45 +6,40 @@
     font-family: Roboto, Tahoma, Verdana, Arial;
     color: #000000;
 }
-.service-content-container{
-  display: flex;
-  margin-bottom: 3%;
-  justify-content: space-around;
-  align-items: center;
+/* Caption on each page */
+h1{
+  margin-top: 5%;     /* to avoid the text is hidden behind the navbar*/
+  text-align: center;
+  position: relative;
 }
-.service-content-item{
+/* ---End Caption--- */
+
+/* ---Content--- */
+.content-container{
+  margin-bottom: 3%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 3%;
   align-items: center;
-  width: 90%;
+  margin: 3%;
+  width: 87%;
   box-shadow: 0 0px 20px 0px #e2b36b;
   border-radius: 25px;
   border: 1px solid #e2b36b;
   background-color:white;
 }
-.service-content-text{
+.content-item{
   max-width: 40%;
-}
-.service-content-image{
-  max-width: 40%;
-}
-.service-content-slideshow{
-  max-width: 40%;
-  max-height: auto;
   position: relative;
   margin: auto;
 }
+.content-slideshow{
+  position: relative;
+  margin: auto;
+}
+/* ---Content End--- */
 
-h1{
-  margin-top: 5%;
-  text-align: center;
-  position: relative;
-}
-h2{
-  text-align: center;
-  position: relative;
-}
 /*Navigation Bar*/
 .fixedcontainer{
   position: fixed;
@@ -83,8 +78,6 @@ h2{
   text-align: center;
   width: 100%;
   text-decoration: none;
-  
-  
 }
 li a:hover, .dropdown:hover .dropdownbtn {
   /*background-color: #eed600;*/
@@ -92,11 +85,8 @@ li a:hover, .dropdown:hover .dropdownbtn {
   text-decoration: underline;
 }
 li.dropdown{
-  
   display: inline-block;
-
-  
-}  
+} 
 .dropdowncont{ /*DropDown Box*/
     display: none;
     position: absolute;
@@ -113,11 +103,11 @@ li.dropdown{
   padding: 12px;
   text-decoration: none;
   display: block;
-  
 }
-.dropdown:hover .dropdowncont {display: block;}
-/*.dropdowncont a:hover {background-color: #eed600;}
-.dropdown:hover .dropdownbtn {background-color: #eed600;}*/
+
+.dropdown:hover .dropdowncont {
+  display: block;
+}
 /*End Navigationbar*/
 
 /*Slideshow Home*/
@@ -148,7 +138,6 @@ li.dropdown{
   margin: auto;
   float: right;
   width: 48%;
-  font-size: 20pt;
   text-align: left;
   line-height: 200%;
   position: relative;
@@ -182,92 +171,67 @@ li.dropdown{
   
   opacity:1; /*Ändert Deckkraft bei Mouseover*/
 }
-
-
-/*End SlideSHow Home*/
-.content{
-  min-height: 700px;
+/* Slide show */
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 50px 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
-.contenthome{
-  min-height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #e2b36b;
 }
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+  background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* ---End Slide-Show--- */
 
-
-
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(196, 191, 191, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+/* Footer */
   footer {
     display: flex;
     box-shadow: 0 0px 10px 0px #e2b36b;
@@ -281,25 +245,25 @@ li.dropdown{
     flex: 1 1 0px;
     max-width: 15%;
     max-height: 15%;
-  }
-  .footertext{
-    flex: 1 1 0px;
-    text-align: center;
-    font-size: small;
-    color: black;
-  }
-  .footerlink{
-    flex: 1 1 0px;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .footerlink:hover{
-    color: #4e5058;
-    text-decoration: underline;
-  }
-  
+}
+.footertext{
+  flex: 1 1 0px;
+  text-align: center;
+  font-size: small;
+  color: black;
+}
+.footerlink{
+  flex: 1 1 0px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.footerlink:hover{
+  color: #4e5058;
+  text-decoration: underline;
+}
+/* ---End Footer--- */
 
 
 
