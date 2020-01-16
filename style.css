@@ -2,9 +2,13 @@
     margin-top: 0%;
     background-color: #ffffff;
     width: 100%;
+    height: 100%;
     margin-left: 0;
     font-family: Roboto, Tahoma, Verdana, Arial;
     color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 /* Caption on each page */
 h1{
@@ -110,68 +114,28 @@ li.dropdown{
 }
 /*End Navigationbar*/
 
-/*Slideshow Home*/
-.slideshow-container {
-  min-width: 80%;
-  margin: 10px;
-  padding: 5px;
-  display: flex;
-}
-.slideshow{
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-  margin-bottom: 3%;
-  justify-content: space-around;
-  box-shadow: 0 0px 20px 0px #e2b36b;
-  border-radius: 25px;
-  border: 1px solid #e2b36b;
-  min-width: 800px;
-  min-height: 500px;
-}
-.mySlides{
-  display: none; 
-  width: 100%;
-  height: auto;
-}
+/* Home */
 .texthome{
   margin: auto;
   float: right;
   width: 48%;
   text-align: left;
   line-height: 200%;
-  position: relative;
-   
+  position: relative; 
 }
 .bild{
   cursor: pointer;
   width: 50%;
 }
-.prevhome, .nexthome{
-  top: 50%;
-  cursor: pointer;
-  height: 100%;
-  width: 35px;
-  background-color: #e2b36b;
-  opacity: 0.5;
-  transition: 1s;
-  color:white;
-}
-.prevhome{
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
+/* ---End Home--- */
 
-.nexthome{
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-
-.prevhome:hover, .nexthome:hover{
-  
-  opacity:1; /*Ändert Deckkraft bei Mouseover*/
-}
 /* Slide show */
+.mySlides{
+  display: none; 
+  width: 100%;
+  height: auto;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -231,20 +195,41 @@ li.dropdown{
 }
 /* ---End Slide-Show--- */
 
+input, textarea, select {
+  width: 100%;
+  padding: 12px 20px;
+  font-family: Roboto, Tahoma, Verdana, Arial;
+  margin: 8px 0;
+  font-size: 12pt;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+input[type=submit]{
+  width: 40%;
+  padding: 5px;
+  align-self: center;
+  font-size: 12pt;
+  align-self: center;
+  border-radius: 5px;
+}
+/* ---End Form---*/
+
 /* Footer */
-  footer {
-    display: flex;
-    box-shadow: 0 0px 10px 0px #e2b36b;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #e2b36b;
-    width: 100%;
-    height: 20%;
-  }
-  .footerimage{
-    flex: 1 1 0px;
-    max-width: 15%;
-    max-height: 15%;
+footer {
+  display: flex;
+  box-shadow: 0 0px 10px 0px #e2b36b;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e2b36b;
+  width: 100%;
+  height: 20%;
+}
+.footerimage{
+  flex: 1 1 0px;
+  max-width: 15%;
+  max-height: 15%;
 }
 .footertext{
   flex: 1 1 0px;

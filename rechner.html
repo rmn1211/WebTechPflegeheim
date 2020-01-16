@@ -2,65 +2,80 @@
 <html lang="de">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <script src="calculator.js"></script>
         <link rel ="stylesheet" type="text/css" href="style.css">
          <link rel ="stylesheet" type="text/css" href="footer.css">
          <title>KaWei Pflegedienst</title>
     </head>
-    <body class = "main">
+    <body class = "main" onload="main()">
         <div class ="fixedcontainer">
             <ul class = "navbar">
                 <li><img src = "img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"class = "logo"> </li>
                 <li class="navelem"><a href="jobs.html">Jobangebote</a></li>            
                 <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
                 <li class="navelem"><a href="rechner.html">Rechner</a></li>
-                <li class="navelem"><a href="dienstleistungen.html">Dienstleistungen</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdownbtn">Allgemeine Infos</a>
-                    <div class ="dropdowncont">
-                        <a href="AllgemeineInfos.html">&Uuml;ber uns</a>
-                        <a href="seniorengarten.html">Seniorengarten</a>
-                        <a href="#">Anmeldung</a>
-                    </div>
+                <a href="javascript:void(0)" class="dropdownbtn">Dienstleistungen</a>
+                <div class ="dropdowncont">
+                    <a href="seniorengarten.html">Seniorengarten</a>
+                    <a href="#">Anmeldung</a>
+                </div>   
+                <li class="navelem"><a href="AllgemeineInfos.html">&Uuml;ber uns</a></li>
                 </li>   
             </ul>
-            </div>
-           <div class = "content">
-               CONTENT
-
-
-
-
-
-
-
-
-
-
-               
-           </div>
-           <footer class="footer-container">
-
-            <div class="footer-item">
-                <div class="footer-link"><a href="impressum.html" class="footbar">Impressum
-                    </a></div>
-    
-            </div>
-            <div class="footer-item">
-                <div class="footer-link"><a href="datenschutz.html" class="footbar">
-                        Datenschutzerkl&auml;rung
-                    </a></div>
-    
-            </div>
-    
-            <div class="footer-item">
-                <div class="footer-contact">
-                    Kontakt: <br>Karin Weirich<br>
-                    St. Avolder Str. 72<br>
-                    66740 Saarlouis<br>
-                    Tel.: +496831 - 5052200<br>
-                    Fax: +496831 - 1664576<br>
-                    Mobil: +49160 - 91658332<br>
-                </div>
+        </div>
+        <br>
+        <h1>Pflegekostenrechner</h1>
+            Kleine Morgen-/Abendtoilette
+           <input type="number" id='kT' value="0">
+           <div id ="oKT">0</div>
+           Große Morgen-/Abendtoilette
+           <input id="gT" type="number" value="0">
+           <div id ="oGT">0</div>
+           Lagern
+           <input id="lag" type="number" value="0">
+           <div id ="oLag">0</div>
+           Mobilisation
+           <input id="mob" type="number" value="0">
+           <div id ="oMob">0</div>
+           Hilfe bei der Nahrungsaufnahme
+           <input id="nahrung" type="number" value="0">
+           <div id ="oNahrung">0</div>
+           Sonderkost bei implantierter Magensonde (PEG)
+           <input id="peg" type="number" value="0">
+           <div id ="oPeg">0</div>
+           Darm- und Blasenentleerung
+           <input id="dbe" type="number" value="0">
+           <div id ="oDBE">0</div>
+           Hilfestellung Verlassen und Wiederaufsuchen der Wohnung
+           <input id="wohn" type="number" value="0">
+           <div id ="oWohn">0</div>
+            Begleitung bei Aktivit&auml;ten au&szlig;erhalb der Wohnung
+           <input id="begl" type="number" value="0">
+           <div id ="oBegl">0</div>
+           Hauswirtschaftliche Verrichtungen/Std.
+           <input id="hausw" type="number" value="0">
+           <div id ="oHausw">0</div>
+            Erstbesuch/Folgebesuch
+           <input id="erstb" type="number" value="0">
+           <div id ="oErstb">0</div>
+           Leistungen der H&auml;uslichen Betreuung
+           <input id="hausl" type="number" value="0">
+           <div id ="oHausl">0</div>
+           H&auml;usliche Betreuung durch Fachkr&auml;fte
+           <input id="hauslEx" type="number" value="0">
+           <div id ="oHauslEx">0</div>
+        <footer>
+            <img src="img/bpa.jpg" class="footerimage">
+            <a href="impressum.html" class="footerlink">Impressum</a>
+            <a href="datenschutz.html" class="footerlink">Datenschutzerkl&auml;rung</a>
+            <div class="footertext">
+                Karin Weirich<br>
+                St. Avolder Str. 72<br>
+                66740 Saarlouis<br>
+                Tel.: +496831 - 5052200<br>
+                Fax: +496831 - 1664576<br>
+                Mobil: +49160 - 91658332<br>
             </div>
         </footer>
     </body>
