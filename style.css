@@ -41,7 +41,10 @@ h1{
   text-align: center;
   position: relative;
 }
-
+h2{
+  text-align: center;
+  position: relative;
+}
 /*Navigation Bar*/
 .fixedcontainer{
   position: fixed;
