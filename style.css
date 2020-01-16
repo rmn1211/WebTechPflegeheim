@@ -129,6 +129,22 @@ li.dropdown{
 }
 /* ---End Home--- */
 
+/*Rechner*/
+
+.inputfield-container{
+  overflow-y: scroll;
+  max-height: 500px;
+  float: left;
+
+}
+.inputlist{
+  list-style-type: none;
+}
+.inputfields{
+  width: 100px;
+}
+/* ---End Rechner--- */
+
 /* Slide show */
 .mySlides{
   display: none; 

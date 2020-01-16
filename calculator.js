@@ -103,6 +103,7 @@ function calcKT()
     document.getElementById('kT').oninput = function () {
         gesKT = this.value * (kostKT+iKT);
         document.getElementById('oKT').innerHTML = gesKT.toFixed(2);
+        gesamtKosten();
     }
 
 }
@@ -112,6 +113,7 @@ function calcGT()
     document.getElementById('gT').oninput = function () {
         gesGT = this.value * (kostGT+iGT);
         document.getElementById('oGT').innerHTML = gesGT.toFixed(2);
+        gesamtKosten();
     }
 }
 
@@ -120,6 +122,7 @@ function calcLagern()
     document.getElementById('lag').oninput = function () {
         gesLag = this.value * (kostLag+iLag);
         document.getElementById('oLag').innerHTML = gesLag.toFixed(2);
+        gesamtKosten();
     }
 }
 
@@ -128,6 +131,7 @@ function calcMobil()
     document.getElementById('mob').oninput = function () {
         gesMobil = this.value * (kostMobil+iMobil);
         document.getElementById('oMob').innerHTML = gesMobil.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcNahrung()
@@ -135,6 +139,7 @@ function calcNahrung()
     document.getElementById('nahrung').oninput = function () {
         gesNahrung = this.value * (kostNahrung+iNahrung);
         document.getElementById('oNahrung').innerHTML = gesNahrung.toFixed(2);
+        gesamtKosten();
     }
 }
 
@@ -143,6 +148,7 @@ function calcPEG()
     document.getElementById('peg').oninput = function () {
         gesPEG = this.value * (kostPEG+iPEG);
         document.getElementById('oPeg').innerHTML = gesPEG.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcDBE()
@@ -150,6 +156,7 @@ function calcDBE()
     document.getElementById('dbe').oninput = function () {
         gesDBE = this.value * (kostDBE+iDBE);
         document.getElementById('oDBE').innerHTML = gesDBE.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcWohn()
@@ -157,6 +164,7 @@ function calcWohn()
     document.getElementById('wohn').oninput = function () {
         gesWohn = this.value * (kostWohn+iWohn);
         document.getElementById('oWohn').innerHTML = gesWohn.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcWohn()
@@ -164,6 +172,7 @@ function calcWohn()
     document.getElementById('wohn').oninput = function () {
         gesWohn = this.value * (kostWohn+iWohn);
         document.getElementById('oWohn').innerHTML = gesWohn.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcBegl()
@@ -171,6 +180,7 @@ function calcBegl()
     document.getElementById('begl').oninput = function () {
         gesBegl = this.value * (kostBegl+iBegl);
         document.getElementById('oBegl').innerHTML = gesBegl.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcHausw()
@@ -178,6 +188,7 @@ function calcHausw()
     document.getElementById('hausw').oninput = function () {
         gesHausw = this.value * (kostHausw+iHausw);
         document.getElementById('oHausw').innerHTML = gesHausw.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcErstB()
@@ -185,6 +196,7 @@ function calcErstB()
     document.getElementById('erstb').oninput = function () {
         gesErstb = this.value * (kostErstb+iErstb);
         document.getElementById('oErstb').innerHTML = gesErstb.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcHausl()
@@ -192,6 +204,7 @@ function calcHausl()
     document.getElementById('hausl').oninput = function () {
         gesHausl = this.value * (kostHausl+iHausl);
         document.getElementById('oHausl').innerHTML = gesHausl.toFixed(2);
+        gesamtKosten();
     }
 }
 function calcHauslEx()
@@ -199,6 +212,19 @@ function calcHauslEx()
     document.getElementById('hauslEx').oninput = function () {
         gesHauslEx = this.value * (kostHauslEx+iHauslEx);
         document.getElementById('oHauslEx').innerHTML = gesHauslEx.toFixed(2);
+        gesamtKosten();
     }
+}
+
+function gesamtKosten()
+{
+    var stufe = document.getElementById("selectStufe").value;
+    var pflegeKost = kostKT+kostGT+kostLag+kostMobil+kostNahrung+kostPEG+kostDBE+kostWohn+kostBegl+kostHausw+kostErstb+kostHausl+kostHauslEx;
+    var invAufw = iKT+iGT+iLag+iMobil+iNahrung+iPEG+iDBE+iWohn+iBegl+iHausw+iErstb+iHausl+iHauslEx;
+    var gesKost =gesKT+gesGT+gesLag+gesMobil+gesNahrung+gesPEG+gesDBE+gesWohn+gesBegl+gesHausw+gesErstb+gesHausl+gesHauslEx;
+    document.getElementById("pflegek").innerHTML = pflegeKost;
+    document.getElementById("invest").innerHTML = invAufw;
+    document.getElementById("gesamt").innerHTML = gesKost;
+
 }
 

@@ -26,45 +26,98 @@
         </div>
         <br>
         <h1>Pflegekostenrechner</h1>
-            Kleine Morgen-/Abendtoilette
-           <input type="number" id='kT' value="0">
-           <div id ="oKT">0</div>
-           Große Morgen-/Abendtoilette
-           <input id="gT" type="number" value="0">
-           <div id ="oGT">0</div>
-           Lagern
-           <input id="lag" type="number" value="0">
-           <div id ="oLag">0</div>
-           Mobilisation
-           <input id="mob" type="number" value="0">
-           <div id ="oMob">0</div>
-           Hilfe bei der Nahrungsaufnahme
-           <input id="nahrung" type="number" value="0">
-           <div id ="oNahrung">0</div>
-           Sonderkost bei implantierter Magensonde (PEG)
-           <input id="peg" type="number" value="0">
-           <div id ="oPeg">0</div>
-           Darm- und Blasenentleerung
-           <input id="dbe" type="number" value="0">
-           <div id ="oDBE">0</div>
-           Hilfestellung Verlassen und Wiederaufsuchen der Wohnung
-           <input id="wohn" type="number" value="0">
-           <div id ="oWohn">0</div>
-            Begleitung bei Aktivit&auml;ten au&szlig;erhalb der Wohnung
-           <input id="begl" type="number" value="0">
-           <div id ="oBegl">0</div>
-           Hauswirtschaftliche Verrichtungen/Std.
-           <input id="hausw" type="number" value="0">
-           <div id ="oHausw">0</div>
-            Erstbesuch/Folgebesuch
-           <input id="erstb" type="number" value="0">
-           <div id ="oErstb">0</div>
-           Leistungen der H&auml;uslichen Betreuung
-           <input id="hausl" type="number" value="0">
-           <div id ="oHausl">0</div>
-           H&auml;usliche Betreuung durch Fachkr&auml;fte
-           <input id="hauslEx" type="number" value="0">
-           <div id ="oHauslEx">0</div>
+        <div class ="content-container">
+            <ul class ="inputfield-container">
+                <li class = "inputlist">
+                    Kleine Morgen-/Abendtoilette
+                    <input type="number" id='kT' value="0" class="inputfields" >
+                    <div id ="oKT">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Große Morgen-/Abendtoilette
+                    <input id="gT" type="number" value="0"class="inputfields">
+                    <div id ="oGT">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Lagern
+                    <input id="lag" type="number" value="0" class="inputfields">
+                    <div id ="oLag">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Mobilisation
+                    <input id="mob" type="number" value="0" class="inputfields">
+                    <div id ="oMob">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Hilfe bei der Nahrungsaufnahme
+                    <input id="nahrung" type="number" value="0" class="inputfields">
+                    <div id ="oNahrung">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Sonderkost bei implantierter Magensonde (PEG)
+                    <input id="peg" type="number" value="0" class="inputfields">
+                    <div id ="oPeg">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Darm- und Blasenentleerung
+                    <input id="dbe" type="number" value="0" class="inputfields">
+                    <div id ="oDBE">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Hilfestellung Verlassen und Wiederaufsuchen der Wohnung
+                    <input id="wohn" type="number" value="0" class="inputfields">
+                    <div id ="oWohn">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Begleitung bei Aktivit&auml;ten au&szlig;erhalb der Wohnung
+                    <input id="begl" type="number" value="0" class="inputfields">
+                    <div id ="oBegl">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Hauswirtschaftliche Verrichtungen/Std.
+                    <input id="hausw" type="number" value="0" class="inputfields">
+                    <div id ="oHausw">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Erstbesuch/Folgebesuch
+                    <input id="erstb" type="number" value="0" class="inputfields">
+                    <div id ="oErstb">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    Leistungen der H&auml;uslichen Betreuung
+                    <input id="hausl" type="number" value="0" class="inputfields">
+                    <div id ="oHausl">0.00</div>
+                </li>
+                <li class = "inputlist">
+                    H&auml;usliche Betreuung durch Fachkr&auml;fte
+                    <input id="hauslEx" type="number" value="0" class="inputfields">
+                    <div id ="oHauslEx">0.00</div>
+                </li>
+            </ul>
+            <ul>
+                <select id = "selectStufe">
+                    <option value="0">Pflegestufe w&auml;hlen</option>
+                    <option value="1">Pflegestufe 2</option>
+                    <option value="2">Pflegestufe 3</option>
+                    <option value="3">Pflegestufe 4</option>
+                    <option value="4">Pflegestufe 5</option>
+                </select>
+            Gesamtkosten:
+            <div id= "gesamt">0</div>
+            Pflegekosten:
+            <div id= "pflegek">0</div>
+            Investitionsaufw
+            <div id= "invest">0</div>
+            Sachleistung Pflegekasse:
+            <div id= "sach">0</div><br>
+            Rest:
+            <div id= "pflegerest">0</div>
+            Eigenanteil:
+            <div id= "gesamt">0</div>
+            </ul>
+
+
+        </div>
         <footer>
             <img src="img/bpa.jpg" class="footerimage">
             <a href="impressum.html" class="footerlink">Impressum</a>
