@@ -74,7 +74,7 @@ h1{
 .dropdown, .navelem{
   width: 18%;       /*Zum Ausfüllen der gesamten Navbar*/
   float: right;     /*Fluss der Navbar von rechts nach links*/
-  margin-top: 13px;      
+  margin-top: 13px;
 }
 .navelem a, .dropdownbtn {
   display: inline-block;
@@ -90,7 +90,7 @@ li a:hover, .dropdown:hover .dropdownbtn {
 }
 li.dropdown{
   display: inline-block;
-} 
+}
 .dropdowncont{ /*DropDown Box*/
     display: none;
     position: absolute;
@@ -100,7 +100,7 @@ li.dropdown{
     padding-bottom: 14px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
-    
+
 }
 .dropdowncont a{
   color: black;
@@ -121,7 +121,7 @@ li.dropdown{
   width: 48%;
   text-align: left;
   line-height: 200%;
-  position: relative; 
+  position: relative;
 }
 .bild{
   cursor: pointer;
@@ -147,7 +147,7 @@ li.dropdown{
 
 /* Slide show */
 .mySlides{
-  display: none; 
+  display: none;
   width: 100%;
   height: auto;
 }
@@ -166,13 +166,13 @@ li.dropdown{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-  
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-  
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: #e2b36b;
@@ -189,11 +189,11 @@ li.dropdown{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-  
+
 .active, .dot:hover {
   background-color: #717171;
 }
-  
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -202,11 +202,11 @@ li.dropdown{
   animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 /* ---End Slide-Show--- */
@@ -267,4 +267,28 @@ footer {
 /* ---End Footer--- */
 
 
+.JobsContainer{
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3%;
+  align-items: center;
+  margin: 3%;
+  width: 60%;
+  box-shadow: 0 0px 20px 0px #e2b36b;
+  border-radius: 25px;
+  border: 1px solid #e2b36b;
+  background-color:white;
+  text-align: center;
+  margin-left: 17%;
+}
+.JobsItem{
+  max-width: 40%;
+  position: relative;
+  margin: auto;
 
+}
+.jobs-content{
+      text-align: center;
+}
