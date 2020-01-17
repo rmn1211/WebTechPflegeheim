@@ -73,7 +73,7 @@
 
     <!-- footer -->
     <footer>
-        <img src="img/bpa.jpg" class="footerimage">
+        <img src="img/bpa.jpg" alt="Mitglied beim bpa e.V" class="footerimage">
         <a href="impressum.html" class="footerlink">Impressum</a>
         <a href="datenschutz.html" class="footerlink">Datenschutzerkl&auml;rung</a>
         <div class="footertext">

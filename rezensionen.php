@@ -14,7 +14,7 @@
 <body class="main">
     <div class="fixedcontainer">
     <ul class="navbar">
-            <li><img src="img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"
+            <li><img src="img/KaWeiLogo_small.png" alt="Logo des Pflegedienstes" onclick="window.location.replace('home.html')"
                     class="logo"> </li>
             <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
             <li class="navelem"><a href="kontakt.php">Kontakt</a></li>
@@ -117,4 +117,19 @@
             </form>
         </div>
     </div>
+    <!-- footer -->
+    <footer>
+        <img src="img/bpa.jpg" alt="Mitglied beim bpa e.V" class="footerimage">
+        <a href="impressum.html" class="footerlink">Impressum</a>
+        <a href="datenschutz.html" class="footerlink">Datenschutzerkl&auml;rung</a>
+        <div class="footertext">
+            Karin Weirich<br>
+            St. Avolder Str. 72<br>
+            66740 Saarlouis<br>
+            Tel.: +496831 - 5052200<br>
+            Fax: +496831 - 1664576<br>
+            Mobil: +49160 - 91658332<br>
+        </div>
+    </footer>
 </body>
+</html>
