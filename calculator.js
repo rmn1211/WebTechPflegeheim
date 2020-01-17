@@ -156,7 +156,7 @@ function calcKT()
         gesKostKT = anzKT * kostKT;
         gesIKT = anzKT * iKT;
         gesKT = anzKT * (kostKT+iKT);
-        document.getElementById('oKT').innerHTML = gesKT.toFixed(2);
+        document.getElementById('oKT').innerHTML = gesKT.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -170,7 +170,7 @@ function calcGT()
         gesKostGT = anzGT*kostGT;
         gesIGT = anzGT*iGT;
         gesGT = anzGT * (kostGT+iGT);
-        document.getElementById('oGT').innerHTML = gesGT.toFixed(2);
+        document.getElementById('oGT').innerHTML = gesGT.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -201,7 +201,7 @@ function updateLagern()
             
 
         }
-        document.getElementById('oLag').innerHTML = gesLag.toFixed(2);
+        document.getElementById('oLag').innerHTML = gesLag.toFixed(2).concat("€");
         gesamtKosten();
 }
 
@@ -231,7 +231,7 @@ function updateMobil()
         gesIMobil = anzMobil * iMobil;
         gesMobil = anzMobil * (kostMobil+iMobil);
     }
-    document.getElementById('oMob').innerHTML = gesMobil.toFixed(2);
+    document.getElementById('oMob').innerHTML = gesMobil.toFixed(2).concat("€");
     gesamtKosten();  
 }
 function calcNahrung()
@@ -241,7 +241,7 @@ function calcNahrung()
         gesKostNahrung = anzNahrung * kostNahrung;
         gesINahrung = anzNahrung * iNahrung;
         gesNahrung = anzNahrung * (kostNahrung+iNahrung);
-        document.getElementById('oNahrung').innerHTML = gesNahrung.toFixed(2);
+        document.getElementById('oNahrung').innerHTML = gesNahrung.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -254,7 +254,7 @@ function calcPEG()
         gesKostPEG = anzPEG * kostPEG;
         gesIPEG = anzPEG * iPEG;
         gesPEG = anzPEG * (kostPEG+iPEG);
-        document.getElementById('oPeg').innerHTML = gesPEG.toFixed(2);
+        document.getElementById('oPeg').innerHTML = gesPEG.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -284,7 +284,7 @@ function updateDBE()
         gesIDBE = anzDBE * iDBE;
         gesDBE = anzDBE * (kostDBE+iDBE);
     }
-    document.getElementById('oDBE').innerHTML = gesDBE.toFixed(2);
+    document.getElementById('oDBE').innerHTML = gesDBE.toFixed(2).concat("€");
         gesamtKosten();
 }
 function calcWohn()
@@ -294,7 +294,7 @@ function calcWohn()
         gesKostWohn = anzWohn * kostWohn;
         gesIWohn = anzWohn*iWohn;
         gesWohn = anzWohn * (kostWohn+iWohn);
-        document.getElementById('oWohn').innerHTML = gesWohn.toFixed(2);
+        document.getElementById('oWohn').innerHTML = gesWohn.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -316,7 +316,7 @@ function calcBegl()
         gesKostBegl = anzBegl * kostBegl;
         gesIBegl = anzBegl * iBegl;
         gesBegl = anzBegl * (kostBegl+iBegl);
-        document.getElementById('oBegl').innerHTML = gesBegl.toFixed(2);
+        document.getElementById('oBegl').innerHTML = gesBegl.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -328,7 +328,7 @@ function calcHausw()
         gesKostHausw = anzHausW * kostHausw;
         gesIHausw = anzHausW * iHausw;
         gesHausw = anzHausW * (kostHausw+iHausw);
-        document.getElementById('oHausw').innerHTML = gesHausw.toFixed(2);
+        document.getElementById('oHausw').innerHTML = gesHausw.toFixed(2).concat("€");
         gesamtKosten();
     }
 }
@@ -339,7 +339,7 @@ function calcErstB()//Berechnung Erstbesuch
         gesKostErstb = anzErstb * kostErstb;
         gesIErstb = anzErstb * iErstb;
         gesErstb = anzErstb * (kostErstb+iErstb);
-        document.getElementById('oErstb').innerHTML = gesErstb.toFixed(2);
+        document.getElementById('oErstb').innerHTML = gesErstb.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -351,7 +351,7 @@ function calcHausl()
         gesKostHausl = anzHausl * kostHausl;
         gesIHausl = anzHausl * iHausl;
         gesHausl = anzHausl * (kostHausl+iHausl);
-        document.getElementById('oHausl').innerHTML = gesHausl.toFixed(2);
+        document.getElementById('oHausl').innerHTML = gesHausl.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -363,7 +363,7 @@ function calcHauslEx()
         gesKostHauslEx = anzHauslEx * kostHauslEx;
         gesIHauslEx = anzHauslEx * iHauslEx;
         gesHauslEx = anzHauslEx * (kostHauslEx+iHauslEx);
-        document.getElementById('oHauslEx').innerHTML = gesHauslEx.toFixed(2);
+        document.getElementById('oHauslEx').innerHTML = gesHauslEx.toFixed(2).concat("€");
         kostenUpdate();
         gesamtKosten();
     }
@@ -380,7 +380,7 @@ function gesamtKosten()
     switch(stufe)
     {
         case "1":
-            document.getElementById("sach").innerHTML= pg1.toFixed(2);
+            document.getElementById("sach").innerHTML= pg1.toFixed(2).concat("€");
             if(gesKost <= pg1)
             {
                 eigenanteil = 0;
@@ -393,7 +393,7 @@ function gesamtKosten()
             }
             break;
         case "2":
-            document.getElementById("sach").innerHTML= pg2.toFixed(2);
+            document.getElementById("sach").innerHTML= pg2.toFixed(2).concat("€");
             gesKost=gesKost+pauschale2_3;
             if(gesKost <= pg2)
             {
@@ -407,7 +407,7 @@ function gesamtKosten()
             }
             break;
         case "3":
-            document.getElementById("sach").innerHTML= pg3.toFixed(2);
+            document.getElementById("sach").innerHTML= pg3.toFixed(2).concat("€");
             gesKost=gesKost+pauschale2_3;
             if(gesKost <= pg3)
             {
@@ -422,7 +422,7 @@ function gesamtKosten()
             break;
         case "4":
             gesKost=gesKost+pauschale4_5;
-            document.getElementById("sach").innerHTML= pg4.toFixed(2);
+            document.getElementById("sach").innerHTML= pg4.toFixed(2).concat("€");
             if(gesKost <= pg4)
             {
                 eigenanteil = 0;
@@ -437,7 +437,7 @@ function gesamtKosten()
             break;
         case "5":
             gesKost=gesKost+pauschale4_5;
-            document.getElementById("sach").innerHTML= pg5.toFixed(2);
+            document.getElementById("sach").innerHTML= pg5.toFixed(2).concat("€");
             if(gesKost <= pg5)
             {
                 eigenanteil = 0;
@@ -454,11 +454,11 @@ function gesamtKosten()
             eigenanteil = gesKost;
             
     }
-    document.getElementById("pflegek").innerHTML = pflegeKost.toFixed(2);
-    document.getElementById("invest").innerHTML = invAufw.toFixed(2);
-    document.getElementById("gesamt").innerHTML = gesKost.toFixed(2);
-    document.getElementById("pflegerest").innerHTML = pflegeRest.toFixed(2);
-    document.getElementById("eigen").innerHTML = eigenanteil.toFixed(2);
+    document.getElementById("pflegek").innerHTML = pflegeKost.toFixed(2).concat("€");
+    document.getElementById("invest").innerHTML = invAufw.toFixed(2).concat("€");
+    document.getElementById("gesamt").innerHTML = gesKost.toFixed(2).concat("€");
+    document.getElementById("pflegerest").innerHTML = pflegeRest.toFixed(2).concat("€");
+    document.getElementById("eigen").innerHTML = eigenanteil.toFixed(2).concat("€");
 }
 
 function kostenUpdate()
