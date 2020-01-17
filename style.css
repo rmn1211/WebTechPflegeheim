@@ -330,7 +330,12 @@ footer {
  h1{
    margin-top: 200px;
  }
+.dropdowncont{
+  position: static;
+  top: 100%;
+  box-shadow: none;
+  background-color: #aaa7a2b4;
+  
+}
 
-
- 
 }
