@@ -6,7 +6,6 @@
     font-family: Roboto, Tahoma, Verdana, Arial;
     color: #000000;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
 }
 /* Caption on each page */
@@ -112,21 +111,6 @@ li.dropdown{
   display: block;
 }
 /*End Navigationbar*/
-
-/* Hintergrundbild*/
-
-body {
-  background-image: url("../WEBTECH FINALE/img/Hintergrund.jpeg");
-  background-size: 100%;
-  background-attachment: fixed;
-  font-family: alwynNew;
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 0 auto;
-  min-width: 700px;
-  max-width: 1400px;
-}
-/*End Hintergrundbild*/
 
 /* Home */
 .texthome{
@@ -305,3 +289,32 @@ footer {
   text-decoration: underline;
 }
 /* ---End Footer--- */
+
+/* Ratings */
+.rating {
+  float:left;
+}
+.rating-show span{
+  float:left; 
+  position:relative; 
+}
+.rating span { 
+  float:right; 
+  position:relative; 
+}
+
+.rating span label {
+  display:inline-block;
+  text-align:center;
+}
+.rating span:hover ~ span label,
+.rating span:hover label {
+  color:#F90;
+}
+.rating input {
+  display: none;
+}
+.star-checked{
+  color:#F90;
+}
+/* ---End Ratings--- */
