@@ -116,7 +116,7 @@ li.dropdown{
 /* Hintergrundbild*/
 
 body {
-  background-image: url("../WEBTECH FINALE/img/Hintergrund.jpeg");
+  
   background-size: 100%;
   background-attachment: fixed;
   font-family: alwynNew;
@@ -305,3 +305,21 @@ footer {
   text-decoration: underline;
 }
 /* ---End Footer--- */
+/*Responsive*/
+/* ---End Responsive ---*/
+@media screen and (max-width: 600px)
+{
+  body{
+    overflow-y: scroll;
+  }
+  .logo{
+    display: none;
+  }
+
+  .navelem{
+    width: 100%;
+  }
+  .dropdown{
+    width: 100%;
+  }
+}
