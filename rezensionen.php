@@ -13,7 +13,7 @@
 
 <body class="main">
     <div class="fixedcontainer">
-        <ul class="navbar">
+    <ul class="navbar">
             <li><img src="img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"
                     class="logo"> </li>
             <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
@@ -26,7 +26,12 @@
                     <a href="dienstleistungen.html#ambulant">Ambulanter Pflegedienst</a>
                     <a href="terminanfrage.php">Terminanfrage-Formular</a>
                 </div>
-            <li class="navelem"><a href="allgemeineInfos.html">&Uuml;ber uns</a></li>
+            </li>
+            <li class="dropdown">
+                <a href="allgemeineInfos.html" class="dropdownbtn">&Uuml;ber uns</a>
+                <div class="dropdowncont">
+                    <a href="rezensionen.php">Rezensionen</a>
+                </div>
             </li>
         </ul>
     </div>
