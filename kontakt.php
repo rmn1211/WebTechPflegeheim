@@ -9,7 +9,7 @@
 <body class="main">
     <div class="fixedcontainer">
     <ul class="navbar">
-            <li><img src="img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"
+            <li><img src="img/KaWeiLogo_small.png" alt="Logo des Pflegedienstes" onclick="window.location.replace('home.html')"
                     class="logo"> </li>
             <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
             <li class="navelem"><a href="kontakt.php">Kontakt</a></li>
@@ -42,7 +42,7 @@
             Fax: +496831 - 1664576<br>
             Mobil: +49160 - 91658332<br>
         </p>
-        <img src="img/Besitzer.jpg" alt="Mitglied im bpa" class="content-item">
+        <img src="img/Besitzer.jpg" alt="Portrait von Karin Weirich, Inhaberin des Pflegedienstes" class="content-item">
     </div>
     <div class="content-container">
         <div class="content-item">
