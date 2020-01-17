@@ -67,7 +67,7 @@
         <div class="content-item">
             <h2>Bitte geben Sie die erforderlichen Informationen ein.</h2>
             <p>Felder mit (*) müssen ausgefüllt werden</p>
-            <img src="img/termin.png" style="width:100%">
+            <img src="img/termin.png" alt="Kalender" style="width:100%">
         </div>
     </div>
     <!-- footer -->
