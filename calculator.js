@@ -31,14 +31,14 @@ var gesMobil =0;
 const kostNahrung = 9.89;
 const iNahrung = 0.5;
 var gesKostNahrung = 0;
-var gesINahrung
+var gesINahrung = 0;
 var gesNahrung = 0;
 
 //Sondenkost bei implantierter Magensonde
 const kostPEG = 3.96;
 const iPEG = 0.2;
 var gesKostPEG = 0;
-var gesIPEG
+var gesIPEG =0;
 var gesPEG = 0;
 
 //Darm- Blasenentleerung
@@ -272,6 +272,7 @@ function calcHauslEx()
 
 function gesamtKosten()
 {
+    
     var stufe = document.getElementById("selectStufe").value;
     var pflegeKost = gesKostKT+gesKostGT+gesKostLag+gesKostMobil+gesKostNahrung+gesKostPEG+gesKostDBE+gesKostWohn+gesKostBegl+gesKostHausw+gesKostErstb+gesKostHausl+gesKostHauslEx;
     var invAufw = gesIKT+gesIGT+gesILag+gesIMobil+gesINahrung+gesIPEG+gesIDBE+gesIWohn+gesIBegl+gesIHausw+gesIErstb+gesIHausl+gesIHauslEx;
@@ -279,4 +280,19 @@ function gesamtKosten()
     document.getElementById("pflegek").innerHTML = pflegeKost.toFixed(2);
     document.getElementById("invest").innerHTML = invAufw.toFixed(2);
     document.getElementById("gesamt").innerHTML = gesKost.toFixed(2);
+
+    
+    switch(stufe)
+    {
+        case 1:
+            document.getElementById("sach").innerHTML= pg2;
+        case 2:
+            document.getElementById("sach").innerHTML= pg3;
+        case 3:
+            document.getElementById("sach").innerHTML= pg4;
+        case 4:
+            document.getElementById("sach").innerHTML= pg5;
+        default:
+            
+    }
 }
