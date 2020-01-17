@@ -142,6 +142,21 @@ li.dropdown{
 }
 .inputfields{
   width: 100px;
+  padding: 12px 20px;
+  font-family: Roboto, Tahoma, Verdana, Arial;
+  margin: 8px 0;
+  font-size: 12pt;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.calcoutput{
+  display: inline-block;
+}
+.calcoutputresult{
+  display: inline-block;
+  font-weight: bold;
 }
 /* ---End Rechner--- */
 

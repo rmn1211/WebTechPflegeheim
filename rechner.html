@@ -1,135 +1,126 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <script src="calculator.js"></script>
-        <link rel ="stylesheet" type="text/css" href="style.css">
-         <link rel ="stylesheet" type="text/css" href="footer.css">
-         <title>KaWei Pflegedienst</title>
-    </head>
-    <body class = "main" onload="main()">
-        <div class ="fixedcontainer">
-            <ul class = "navbar">
-                <li><img src = "img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"class = "logo"> </li>
-                <li class="navelem"><a href="jobs.html">Jobangebote</a></li>            
-                <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
-                <li class="navelem"><a href="rechner.html">Rechner</a></li>
-                <li class="dropdown">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <title>KaWei Pflegedienst</title>
+</head>
+
+<body class="main" onload="main()">
+    <div class="fixedcontainer">
+        <ul class="navbar">
+            <li><img src="img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"
+                    class="logo"> </li>
+            <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
+            <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
+            <li class="navelem"><a href="rechner.html">Rechner</a></li>
+            <li class="dropdown">
                 <a href="javascript:void(0)" class="dropdownbtn">Dienstleistungen</a>
-                <div class ="dropdowncont">
+                <div class="dropdowncont">
                     <a href="seniorengarten.html">Seniorengarten</a>
                     <a href="#">Anmeldung</a>
-                </div>   
-                <li class="navelem"><a href="AllgemeineInfos.html">&Uuml;ber uns</a></li>
-                </li>   
-            </ul>
-        </div>
-        <br>
-        <h1>Pflegekostenrechner</h1>
-        <div class ="content-container">
-            <ul class ="inputfield-container">
-                <li class = "inputlist">
-                    Kleine Morgen-/Abendtoilette
-                    <input type="number" id='kT' value="0" class="inputfields" >
-                    <div id ="oKT">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Große Morgen-/Abendtoilette
-                    <input id="gT" type="number" value="0"class="inputfields">
-                    <div id ="oGT">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Lagern
-                    <input id="lag" type="number" value="0" class="inputfields">
-                    <div id ="oLag">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Mobilisation
-                    <input id="mob" type="number" value="0" class="inputfields">
-                    <div id ="oMob">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Hilfe bei der Nahrungsaufnahme
-                    <input id="nahrung" type="number" value="0" class="inputfields">
-                    <div id ="oNahrung">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Sonderkost bei implantierter Magensonde (PEG)
-                    <input id="peg" type="number" value="0" class="inputfields">
-                    <div id ="oPeg">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Darm- und Blasenentleerung
-                    <input id="dbe" type="number" value="0" class="inputfields">
-                    <div id ="oDBE">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Hilfestellung Verlassen und Wiederaufsuchen der Wohnung
-                    <input id="wohn" type="number" value="0" class="inputfields">
-                    <div id ="oWohn">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Begleitung bei Aktivit&auml;ten au&szlig;erhalb der Wohnung
-                    <input id="begl" type="number" value="0" class="inputfields">
-                    <div id ="oBegl">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Hauswirtschaftliche Verrichtungen/Std.
-                    <input id="hausw" type="number" value="0" class="inputfields">
-                    <div id ="oHausw">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Erstbesuch/Folgebesuch
-                    <input id="erstb" type="number" value="0" class="inputfields">
-                    <div id ="oErstb">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    Leistungen der H&auml;uslichen Betreuung
-                    <input id="hausl" type="number" value="0" class="inputfields">
-                    <div id ="oHausl">0.00</div>
-                </li>
-                <li class = "inputlist">
-                    H&auml;usliche Betreuung durch Fachkr&auml;fte
-                    <input id="hauslEx" type="number" value="0" class="inputfields">
-                    <div id ="oHauslEx">0.00</div>
-                </li>
-            </ul>
-            <ul>
-                <select id = "selectStufe">
-                    <option value="0">Pflegestufe w&auml;hlen</option>
-                    <option value="1">Pflegestufe 2</option>
-                    <option value="2">Pflegestufe 3</option>
-                    <option value="3">Pflegestufe 4</option>
-                    <option value="4">Pflegestufe 5</option>
-                </select>
-            Gesamtkosten:
-            <div id= "gesamt">0</div>
-            Pflegekosten:
-            <div id= "pflegek">0</div>
-            Investitionsaufw
-            <div id= "invest">0</div>
-            Sachleistung Pflegekasse:
-            <div id= "sach">0</div><br>
-            Rest:
-            <div id= "pflegerest">0</div>
-            Eigenanteil:
-            <div id= "gesamt">0</div>
-            </ul>
+                </div>
+            <li class="navelem"><a href="AllgemeineInfos.html">&Uuml;ber uns</a></li>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <h1>Pflegekostenrechner</h1>
+    <div class="content-container">
+        <div class="content-item">
+        <div class="inputfield-container">
+            <p> Kleine Morgen-/Abendtoilette</p>
+            <input type="number" id='kT' value="0" class="inputfields">
+            <div id="oKT" class="calcoutput">0.00</div>
 
+            <p>Große Morgen-/Abendtoilette</p>
+            <input id="gT" type="number" value="0" class="inputfields">
+            <div id="oGT" class="calcoutput">0.00</div>
 
+            <p>Lagern</p>
+            <input id="lag" type="number" value="0" class="inputfields">
+            <div id="oLag" class="calcoutput">0.00</div>
+
+            <p>Mobilisation</p>
+            <input id="mob" type="number" value="0" class="inputfields">
+            <div id="oMob" class="calcoutput">0.00</div>
+
+            <p>Hilfe bei der Nahrungsaufnahme</p>
+            <input id="nahrung" type="number" value="0" class="inputfields">
+            <div id="oNahrung" class="calcoutput">0.00</div>
+
+            <p>Sonderkost bei implantierter Magensonde (PEG)</p>
+            <input id="peg" type="number" value="0" class="inputfields">
+            <div id="oPeg" class="calcoutput">0.00</div>
+
+            <p>Darm- und Blasenentleerung</p>
+            <input id="dbe" type="number" value="0" class="inputfields">
+            <div id="oDBE" class="calcoutput">0.00</div>
+
+            <p>Hilfestellung Verlassen und Wiederaufsuchen der Wohnung</p>
+            <input id="wohn" type="number" value="0" class="inputfields">
+            <div id="oWohn" class="calcoutput">0.00</div>
+
+            <p>Begleitung bei Aktivit&auml;ten au&szlig;erhalb der Wohnung</p>
+            <input id="begl" type="number" value="0" class="inputfields">
+            <div id="oBegl" class="calcoutput">0.00</div>
+
+            <p>Hauswirtschaftliche Verrichtungen/Std.</p>
+            <input id="hausw" type="number" value="0" class="inputfields">
+            <div id="oHausw" class="calcoutput">0.00</div>
+
+            <p>Erstbesuch/Folgebesuch</p>
+            <input id="erstb" type="number" value="0" class="inputfields">
+            <div id="oErstb" class="calcoutput">0.00</div>
+
+            <p>Leistungen der H&auml;uslichen Betreuung</p>
+            <input id="hausl" type="number" value="0" class="inputfields">
+            <div id="oHausl" class="calcoutput">0.00</div>
+
+            <p>H&auml;usliche Betreuung durch Fachkr&auml;fte</p>
+            <input id="hauslEx" type="number" value="0" class="inputfields">
+            <div id="oHauslEx" class="calcoutput">0.00</div>
         </div>
-        <footer>
-            <img src="img/bpa.jpg" class="footerimage">
-            <a href="impressum.html" class="footerlink">Impressum</a>
-            <a href="datenschutz.html" class="footerlink">Datenschutzerkl&auml;rung</a>
-            <div class="footertext">
-                Karin Weirich<br>
-                St. Avolder Str. 72<br>
-                66740 Saarlouis<br>
-                Tel.: +496831 - 5052200<br>
-                Fax: +496831 - 1664576<br>
-                Mobil: +49160 - 91658332<br>
-            </div>
-        </footer>
-    </body>
+    </div>
+        <div class="content-item">
+            <h2>Kosten-Aufteilung</h2>
+            <select id="selectStufe">
+                <option value="0">Pflegestufe w&auml;hlen</option>
+                <option value="1">Pflegestufe 2</option>
+                <option value="2">Pflegestufe 3</option>
+                <option value="3">Pflegestufe 4</option>
+                <option value="4">Pflegestufe 5</option>
+            </select>
+            <p class="calcoutput">Gesamtkosten: 
+            <div id="gesamt" class="calcoutputresult">0</div></p>
+            <p class="calcoutput">Pflegekosten:
+            <div id="pflegek" class="calcoutputresult">0</div></p>
+            <p class="calcoutput">Investitionsaufwand:
+            <div id="invest" class="calcoutputresult">0</div></p>
+            <p class="calcoutput">Sachleistung Pflegekasse:
+            <div id="sach" class="calcoutputresult">0</div></p>
+            <p class="calcoutput">Rest:
+            <div id="pflegerest" class="calcoutputresult">0</div></p>
+            <p class="calcoutput">Eigenanteil:
+            <div id="gesamt" class="calcoutputresult">0</div></p>
+        </div>
+    </div>
+    <footer>
+        <img src="img/bpa.jpg" class="footerimage">
+        <a href="impressum.html" class="footerlink">Impressum</a>
+        <a href="datenschutz.html" class="footerlink">Datenschutzerkl&auml;rung</a>
+        <div class="footertext">
+            Karin Weirich<br>
+            St. Avolder Str. 72<br>
+            66740 Saarlouis<br>
+            Tel.: +496831 - 5052200<br>
+            Fax: +496831 - 1664576<br>
+            Mobil: +49160 - 91658332<br>
+        </div>
+    </footer>
+</body>
+
 </html>
