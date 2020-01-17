@@ -315,12 +315,17 @@ footer {
   .logo{
     display: none;
   }
-
+.navbar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   .navelem{
-    width: 100%;
+    width: 250px;
+    
   }
   .dropdown{
-    width: 100%;
+    width: 250px;
   }
   .dropdowncont
   {
@@ -337,5 +342,7 @@ footer {
   background-color: #aaa7a2b4;
   
 }
+
+
 
 }
