@@ -113,6 +113,21 @@ li.dropdown{
 }
 /*End Navigationbar*/
 
+/* Hintergrundbild*/
+
+body {
+  background-image: url("../WEBTECH FINALE/img/Hintergrund.jpeg");
+  background-size: 100%;
+  background-attachment: fixed;
+  font-family: alwynNew;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 auto;
+  min-width: 700px;
+  max-width: 1400px;
+}
+/*End Hintergrundbild*/
+
 /* Home */
 .texthome{
   margin: auto;
