@@ -322,8 +322,7 @@ footer {
 .dropdowncont{
   position: static;
   top: 100%;
-  box-shadow: none;
-  background-color: #aaa7a2b4;
+  box-shadow: none;;
   
 }
 
