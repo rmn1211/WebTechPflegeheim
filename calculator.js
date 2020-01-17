@@ -105,6 +105,7 @@ var gesKost = 0;
 var pflegeKost = 0;
 var invAufw = 0;
 var pflegeRest = 0;
+var eigenanteil =0;
 
 function main()
 {
@@ -121,6 +122,9 @@ function main()
     calcErstB();
     calcHausl();
     calcHauslEx();
+    document.getElementById('selectStufe').oninput = function () {
+        gesamtKosten();
+    }
 }
 
 function calcKT()
@@ -192,7 +196,7 @@ function calcPEG()
 function calcDBE()
 {
     document.getElementById('dbe').oninput = function () {
-        gesKostDBE = this.value * kostdbe;
+        gesKostDBE = this.value * kostDBE;
         gesIDBE = this.value * iDBE;
         gesDBE = this.value * (kostDBE+iDBE);
         document.getElementById('oDBE').innerHTML = gesDBE.toFixed(2);
@@ -277,22 +281,70 @@ function gesamtKosten()
     var pflegeKost = gesKostKT+gesKostGT+gesKostLag+gesKostMobil+gesKostNahrung+gesKostPEG+gesKostDBE+gesKostWohn+gesKostBegl+gesKostHausw+gesKostErstb+gesKostHausl+gesKostHauslEx;
     var invAufw = gesIKT+gesIGT+gesILag+gesIMobil+gesINahrung+gesIPEG+gesIDBE+gesIWohn+gesIBegl+gesIHausw+gesIErstb+gesIHausl+gesIHauslEx;
     var gesKost =gesKT+gesGT+gesLag+gesMobil+gesNahrung+gesPEG+gesDBE+gesWohn+gesBegl+gesHausw+gesErstb+gesHausl+gesHauslEx;
+        
+    switch(stufe)
+    {
+        case "1":
+            document.getElementById("sach").innerHTML= pg2.toFixed(2);
+            if(pflegeKost <= pg2)
+            {
+                eigenanteil = 0;
+                pflegeRest = pg2-pflegeKost;
+            }
+            else
+            {
+                pflegeRest = 0;
+                eigenanteil = pflegeKost-pg2;
+            }
+            break;
+        case "2":
+            document.getElementById("sach").innerHTML= pg3.toFixed(2);
+            if(pflegeKost <= pg3)
+            {
+                eigenanteil = 0;
+                pflegeRest = pg3-pflegeKost;
+            }
+            else
+            {
+                pflegeRest = 0;
+                eigenanteil = pflegeKost-pg3;
+            }
+            break;
+        case "3":
+            document.getElementById("sach").innerHTML= pg4.toFixed(2);
+            if(pflegeKost <= pg4)
+            {
+                eigenanteil = 0;
+                pflegeRest = pg4-pflegeKost;
+            }
+            else
+            {
+                pflegeRest = 0;
+                eigenanteil = pflegeKost-pg4;
+            }
+            break;
+            break;
+        case "4":
+            document.getElementById("sach").innerHTML= pg5.toFixed(2);
+            if(pflegeKost <= pg5)
+            {
+                eigenanteil = 0;
+                pflegeRest = pg5-pflegeKost;
+            }
+            else
+            {
+                pflegeRest = 0;
+                eigenanteil = pflegeKost-pg5;
+            }
+            break;
+        default:
+            pflegeRest=0;
+            eigenanteil = pflegeKost;
+            
+    }
     document.getElementById("pflegek").innerHTML = pflegeKost.toFixed(2);
     document.getElementById("invest").innerHTML = invAufw.toFixed(2);
     document.getElementById("gesamt").innerHTML = gesKost.toFixed(2);
-
-    
-    switch(stufe)
-    {
-        case 1:
-            document.getElementById("sach").innerHTML= pg2;
-        case 2:
-            document.getElementById("sach").innerHTML= pg3;
-        case 3:
-            document.getElementById("sach").innerHTML= pg4;
-        case 4:
-            document.getElementById("sach").innerHTML= pg5;
-        default:
-            
-    }
+    document.getElementById("pflegerest").innerHTML = pflegeRest.toFixed(2);
+    document.getElementById("eigen").innerHTML = eigenanteil.toFixed(2);
 }
