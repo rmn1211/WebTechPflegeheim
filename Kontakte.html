@@ -1,77 +1,72 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link rel ="stylesheet" type="text/css" href="style.css">
-        <link rel ="stylesheet" type="text/css" href="footer.css">
-    </head>
-    <body class = "main">
-        <div class ="fixedcontainer">
-            <ul class = "navbar">
-                <li><img src = "img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"class = "logo"> </li>
-                <li class="navelem"><a href="jobs.html">Jobangebote</a></li>            
-                <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
-                <li class="navelem"><a href="rechner.html">Rechner</a></li>
-                <li class="navelem"><a href="dienstleistungen.html">Dienstleistungen</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdownbtn">Allgemeine Infos</a>
-                    <div class ="dropdowncont">
-                        <a href="AllgemeineInfos.html">&Uuml;ber uns</a>
-                        <a href="seniorengarten.html">Seniorengarten</a>
-                        <a href="#">Anmeldung</a>
-                    </div>
-                </li>   
-            </ul>
-            </div>
-             <div id="h">
 
-    <h1 align="center" >Kontakt</h1>
-                       </div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+</head>
 
-         <table width="100%" border="0" bgcolor="#C0C0C0" cellpadding="0" cellspacing="0" class="tab1">
-          <tr>
-           <td><img src="img/Besitzer.jpg" alt="Besitzer" width="80%" >   </td>
-           <td align="center">Pflegedienst Weirich<br>
-         St. Avolder Str.72<br>
-         66740 Saarlouis <br>
-         <br> </br>
-         Telefon: +49 6831 5052200<br>
-         Mobil: 0160/91658332<br>
-         Fax: 06831/1664576<br>
-         E-Mail: info@pflegedienst-weirich.de</td>
-          </tr>
-          <tr>
-           <td><img src="img/Mitglied.jpg" alt="Mitglied im bpa" width="80%"></td>
-           <td>
-</td>
-          </tr>
-         </table>
-
-                <footer class="footer-container">
-
-                <div class="footer-item">
-                    <div class="footer-link"><a href="impressum.html" class="footbar">Impressum
-                        </a></div>
-
+<body class="main">
+    <div class="fixedcontainer">
+        <ul class="navbar">
+            <li><img src="img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"
+                    class="logo"> </li>
+            <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
+            <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
+            <li class="navelem"><a href="rechner.html">Rechner</a></li>
+            <li class="dropdown">
+                <a href="dienstleistungen.html" class="dropdownbtn">Dienstleistungen</a>
+                <div class="dropdowncont">
+                    <a href="dienstleistungen.html#seniorengarten">Seniorengarten</a>
+                    <a href="dienstleistungen.html#ambulant">Amabulanter Pflegedienst</a>
+                    <a href="terminanfrage.php">Terminanfrage-Formular</a>
                 </div>
-                <div class="footer-item">
-                    <div class="footer-link"><a href="datenschutz.html" class="footbar">
-                            Datenschutzerkl&auml;rung
-                        </a></div>
+            <li class="navelem"><a href="AllgemeineInfos.html">&Uuml;ber uns</a></li>
+            </li>
+        </ul>
+    </div>
+    <h1>Kontakt</h1>
+    <div class="content-container">
+        <p class="content-item">
+            Pflegedienst Weirich<br>
+            Karin Weirich<br>
+            St. Avolder Str. 72<br>
+            66740 Saarlouis<br>
+            Tel.: +496831 - 5052200<br>
+            Fax: +496831 - 1664576<br>
+            Mobil: +49160 - 91658332<br>
+        </p>
+        <img src="img/Besitzer.jpg" alt="Mitglied im bpa" class="content-item">
+        <div class="content-item">
+            <h2 id="contactform">Kontaktformular</h2>
+            <p>Haben Sie Fragen, Wünsche oder Anregungen? Bitte nehmen Sie Kontakt mit uns auf, wir helfen Ihnen gerne weiter!</p>
+            <form action="./contactform_send.php" method="POST">
+                <p>E-Mail: *
+                    <input type="text" name="name"></p>
+                <p>E-Mail: *
+                    <input type="email" name="email"></p>
+                <p>Weitere Informationen:
+                    <textarea name="message" rows="15" cols="30"></textarea></p>
+                <input type="submit" value="Senden">
+            </form>
 
-                </div>
+        </div>
+    </div>
 
-                <div class="footer-item">
-                    <div class="footer-contact">
-                        Kontakt: <br>Karin Weirich<br>
-                        St. Avolder Str. 72<br>
-                        66740 Saarlouis<br>
-                        Tel.: +496831 - 5052200<br>
-                        Fax: +496831 - 1664576<br>
-                        Mobil: +49160 - 91658332<br></div>
+    <!-- footer -->
+    <footer>
+        <img src="img/bpa.jpg" class="footerimage">
+        <a href="impressum.html" class="footerlink">Impressum</a>
+        <a href="datenschutz.html" class="footerlink">Datenschutzerkl&auml;rung</a>
+        <div class="footertext">
+            Karin Weirich<br>
+            St. Avolder Str. 72<br>
+            66740 Saarlouis<br>
+            Tel.: +496831 - 5052200<br>
+            Fax: +496831 - 1664576<br>
+            Mobil: +49160 - 91658332<br>
+        </div>
+    </footer>
 
-
-                </div>
-            </footer>
-
-  </html>
+</html>
