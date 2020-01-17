@@ -114,11 +114,13 @@ var gesIHauslEx = 0;
 var gesHauslEx = 0;
 
 //Pflegegrad Sachleistung Kasse
+const pg1 = 125;
 const pg2 = 689;
 const pg3 = 1298;
 const pg4 = 1612;
 const pg5 = 1995;
-
+const pauschale2_3 = 23;
+const pauschale4_5 = 33;
 var pflegestufe = 0;
 var gesKost = 0;
 var pflegeKost = 0;
@@ -378,61 +380,78 @@ function gesamtKosten()
     switch(stufe)
     {
         case "1":
-            document.getElementById("sach").innerHTML= pg2.toFixed(2);
-            if(pflegeKost <= pg2)
+            document.getElementById("sach").innerHTML= pg1.toFixed(2);
+            if(gesKost <= pg1)
             {
                 eigenanteil = 0;
-                pflegeRest = pg2-pflegeKost;
+                pflegeRest = pg1-gesKost;
             }
             else
             {
                 pflegeRest = 0;
-                eigenanteil = pflegeKost-pg2;
+                eigenanteil = gesKost-pg1;
             }
             break;
         case "2":
-            document.getElementById("sach").innerHTML= pg3.toFixed(2);
-            if(pflegeKost <= pg3)
+            document.getElementById("sach").innerHTML= pg2.toFixed(2);
+            gesKost=gesKost+pauschale2_3;
+            if(gesKost <= pg2)
             {
                 eigenanteil = 0;
-                pflegeRest = pg3-pflegeKost;
+                pflegeRest = pg2-gesKost;
             }
             else
             {
                 pflegeRest = 0;
-                eigenanteil = pflegeKost-pg3;
+                eigenanteil = gesKost-pg2;
             }
             break;
         case "3":
-            document.getElementById("sach").innerHTML= pg4.toFixed(2);
-            if(pflegeKost <= pg4)
+            document.getElementById("sach").innerHTML= pg3.toFixed(2);
+            gesKost=gesKost+pauschale2_3;
+            if(gesKost <= pg3)
             {
                 eigenanteil = 0;
-                pflegeRest = pg4-pflegeKost;
+                pflegeRest = pg3-gesKost;
             }
             else
             {
                 pflegeRest = 0;
-                eigenanteil = pflegeKost-pg4;
+                eigenanteil = gesKost-pg3;
             }
-            break;
             break;
         case "4":
-            document.getElementById("sach").innerHTML= pg5.toFixed(2);
-            if(pflegeKost <= pg5)
+            gesKost=gesKost+pauschale4_5;
+            document.getElementById("sach").innerHTML= pg4.toFixed(2);
+            if(gesKost <= pg4)
             {
                 eigenanteil = 0;
-                pflegeRest = pg5-pflegeKost;
+                pflegeRest = pg4-gesKost;
             }
             else
             {
                 pflegeRest = 0;
-                eigenanteil = pflegeKost-pg5;
+                eigenanteil = gesKost-pg4;
+            }
+            break;
+            break;
+        case "5":
+            gesKost=gesKost+pauschale4_5;
+            document.getElementById("sach").innerHTML= pg5.toFixed(2);
+            if(gesKost <= pg5)
+            {
+                eigenanteil = 0;
+                pflegeRest = pg5-gesKost;
+            }
+            else
+            {
+                pflegeRest = 0;
+                eigenanteil = gesKost-pg5;
             }
             break;
         default:
             pflegeRest=0;
-            eigenanteil = pflegeKost;
+            eigenanteil = gesKost;
             
     }
     document.getElementById("pflegek").innerHTML = pflegeKost.toFixed(2);
