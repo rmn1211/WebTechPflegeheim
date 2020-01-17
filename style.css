@@ -151,6 +151,17 @@ li.dropdown{
   border-radius: 10px;
   box-sizing: border-box;
 }
+.inputpflegestufe{
+  max-width: 100%;
+  padding: 12px 20px;
+  font-family: Roboto, Tahoma, Verdana, Arial;
+  margin: 8px 0;
+  font-size: 12pt;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
 .calcoutput{
   display: inline-block;
 }
