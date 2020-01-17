@@ -3,30 +3,30 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="icon" type="image/icon" href="">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>KaWei Pflegedienst</title>
 </head>
 
 <body class="main">
     <div class="fixedcontainer">
-        <ul class="navbar">
+    <ul class="navbar">
             <li><img src="img/KaWeiLogo_small.png" alt="Logo" onclick="window.location.replace('home.html')"
                     class="logo"> </li>
             <li class="navelem"><a href="jobs.html">Jobangebote</a></li>
-            <li class="navelem"><a href="kontakte.html">Kontakt</a></li>
+            <li class="navelem"><a href="kontakt.php">Kontakt</a></li>
             <li class="navelem"><a href="rechner.html">Rechner</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdownbtn">Dienstleistungen</a>
+                <a href="dienstleistungen.html" class="dropdownbtn">Dienstleistungen</a>
                 <div class="dropdowncont">
-                    <a href="seniorengarten.html">Seniorengarten</a>
-                    <a href="#">Anmeldung</a>
+                    <a href="dienstleistungen.html#seniorengarten">Seniorengarten</a>
+                    <a href="dienstleistungen.html#ambulant">Ambulanter Pflegedienst</a>
+                    <a href="terminanfrage.php">Terminanfrage-Formular</a>
                 </div>
-            <li class="navelem"><a href="AllgemeineInfos.html">&Uuml;ber uns</a></li>
+            <li class="navelem"><a href="allgemeineInfos.html">&Uuml;ber uns</a></li>
             </li>
         </ul>
     </div>
-
+    <br>
     <h1>Terminanfrage</h1>
 
     <div class="content-container">
@@ -41,7 +41,7 @@
                     echo "<p style='color: green;'>Anfrage erfolgreich versendet!</p>";
                 }
             ?>
-            <form action="./appointment.php" method="POST">
+            <form action="./appointment_send.php" method="POST">
                 <p>Wählen Sie die Art Ihrer Terminanfrage: *
                     <select id="appointmenttype" name="appointmenttype">
                         <option value="Tagesbetreuung">Tagesbetreuung im Seniorengarten</option>
