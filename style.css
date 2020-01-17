@@ -2,13 +2,12 @@
     margin-top: 0%;
     background-color: #ffffff;
     width: 100%;
-    height: 100%;
     margin-left: 0;
     font-family: Roboto, Tahoma, Verdana, Arial;
     color: #000000;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    align-items: stretch;
 }
 /* Caption on each page */
 h1{
@@ -24,8 +23,8 @@ h1{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  flex: 1;
   padding: 3%;
-  align-items: center;
   margin: 3%;
   width: 87%;
   box-shadow: 0 0px 20px 0px #e2b36b;
@@ -291,30 +290,3 @@ footer {
   text-decoration: underline;
 }
 /* ---End Footer--- */
-
-
-.JobsContainer{
-  margin-bottom: 3%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 3%;
-  align-items: center;
-  margin: 3%;
-  width: 60%;
-  box-shadow: 0 0px 20px 0px #e2b36b;
-  border-radius: 25px;
-  border: 1px solid #e2b36b;
-  background-color:white;
-  text-align: center;
-  margin-left: 17%;
-}
-.JobsItem{
-  max-width: 40%;
-  position: relative;
-  margin: auto;
-
-}
-.jobs-content{
-      text-align: center;
-}
