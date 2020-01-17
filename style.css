@@ -307,7 +307,7 @@ footer {
 /* ---End Footer--- */
 /*Responsive*/
 /* ---End Responsive ---*/
-@media screen and (max-width: 600px)
+@media screen and (max-width: 600px) and (orientation: portrait)
 {
   body{
     overflow-y: scroll;
@@ -325,5 +325,12 @@ footer {
   .dropdowncont
   {
     width: 100%;
+    z-index: 1;
   }
+ h1{
+   margin-top: 200px;
+ }
+
+
+ 
 }
